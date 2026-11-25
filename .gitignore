@@ -5,7 +5,6 @@ venv/
 .env
 node_modules/
 frontend/dist/
-frontend/android/
 .pytest_cache/
 *.tsbuildinfo
 

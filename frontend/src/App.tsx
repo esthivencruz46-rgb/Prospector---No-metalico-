@@ -19,7 +19,7 @@ import Supermaduras, { SupermadurasCelda } from "./Supermaduras";
 import PanelVigilancia, { useVigilancia } from "./Vigilancia";
 import {
   Bell, BookOpen, ClipboardCheck, Eye, Factory, Gem, SlidersHorizontal, Trophy, FileImage, FlaskConical, Layers, Library, LocateFixed, Map as IconoMapa, Mountain, Radar, Route, Satellite,
-  CalendarDays, Check, Cloud, FileText, Globe2, Leaf, MapPin, PanelLeftOpen, Pickaxe, RefreshCw, Save, Scan, Search, ShieldAlert, ShieldX, Star, Trash2, Truck, X, ChevronLeft, ChevronRight } from "lucide-react";
+  CalendarDays, Check, Cloud, FileText, Globe2, Leaf, MapPin, PanelLeftOpen, Pickaxe, RefreshCw, Save, Scan, Search, ShieldAlert, ShieldX, Star, Trash2, Truck, X, ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 import { componerPrioridadSilice, mascaraZonas, type PrioridadLibre } from "./prioridadLibre";
 import {
   borrarAdjunto, borrarAnalisis, borrarTodosLosAnalisis, codigosConAnalisis, elegirRaiz, escritorApp, escritorLaptop,
@@ -1437,6 +1437,21 @@ export default function App() {
   // «Unidades en la Prioridad» plegado por defecto (menos carga visual; el resumen se ve en la línea del título)
   const [unidadesAbiertas, setUnidadesAbiertas] = useState(false);
   // barra de herramientas de la derecha: se puede plegar para ver más mapa (se recuerda en el dispositivo)
+  // leyenda flotante («qué estás viendo»): en el celular empieza PLEGADA como un botón chico (pedido del usuario,
+  // 25/11/2026: «es molestoso, abarca espacio que queremos maximizar»); se recuerda en el dispositivo
+  const [leyendaPlegada, setLeyendaPlegada] = useState<boolean>(() => {
+    try { const v = localStorage.getItem("prospector-rmi:leyenda-plegada"); return v === null ? tactil : v === "1"; } catch { return tactil; }
+  });
+  function plegarLeyenda(v: boolean) {
+    setLeyendaPlegada(v);
+    try { localStorage.setItem("prospector-rmi:leyenda-plegada", v ? "1" : "0"); } catch { /* sin almacenamiento */ }
+  }
+  // celular: en la barra derecha solo van las herramientas de uso diario; el resto en «Más» (25/11/2026, «más sencillo»)
+  const [masAbierto, setMasAbierto] = useState(false);
+  // aviso de bienvenida: se puede cerrar y no vuelve a salir
+  const [bienvenidaVista, setBienvenidaVista] = useState<boolean>(() => {
+    try { return localStorage.getItem("prospector-rmi:bienvenida-vista") === "1"; } catch { return false; }
+  });
   const [barraPlegada, setBarraPlegada] = useState<boolean>(() => {
     try { return localStorage.getItem("prospector-rmi:barra-plegada") === "1"; } catch { return false; }
   });
@@ -2483,16 +2498,17 @@ export default function App() {
       </div>
 
       {/* ---------- botones flotantes ---------- */}
-      <div className={barraPlegada ? "flotantes plegada" : "flotantes"}>
+      <div className={`flotantes${barraPlegada ? " plegada" : ""}${masAbierto ? " mas-abierto" : ""}`}
+        onClick={(e) => { if ((e.target as HTMLElement).closest(".secundario")) setMasAbierto(false); }}>
         <button className="plegar-barra" title={barraPlegada ? "Mostrar herramientas" : "Plegar herramientas (más mapa a la vista)"}
           aria-label={barraPlegada ? "Mostrar herramientas" : "Plegar herramientas"} onClick={() => plegarBarra(!barraPlegada)}>
           {barraPlegada ? <ChevronLeft size={20} /> : <ChevronRight size={18} />}
         </button>
         {!barraPlegada && <>
         <button title="Capas" aria-label="Capas" className={verCapas ? "activo" : ""} onClick={() => setVerCapas((v) => !v)}><Layers size={20} /></button>
-        <button title="Carpetas y formaciones" aria-label="Carpetas y formaciones" className={verCatalogo ? "activo" : ""}
+        <button title="Carpetas y formaciones" aria-label="Carpetas y formaciones" className={verCatalogo ? "secundario activo" : "secundario"}
           onClick={() => { setVerCatalogo((v) => !v); setVerCapas(false); }}><Library size={20} /></button>
-        <button title="Vigilancia del catastro de INGEMMET" aria-label="Vigilancia del catastro" className={verVig ? "activo campana" : "campana"}
+        <button title="Vigilancia del catastro de INGEMMET" aria-label="Vigilancia del catastro" className={verVig ? "secundario activo campana" : "secundario campana"}
           onClick={() => { setVerVig((v) => !v); setVerCapas(false); setVerRanking(false); setVerSuper(false); setVerPetitorio(false); setVerBarrido(false); }}>
           <Bell size={20} />{vig.noLeidas > 0 && <span className="insignia">{vig.noLeidas}</span>}
         </button>
@@ -2502,14 +2518,14 @@ export default function App() {
         <button title="Unidades supermaduras: arenas y areniscas casi solo de cuarzo (51 boletines de INGEMMET)" aria-label="Unidades supermaduras"
           className={verSuper ? "activo" : ""}
           onClick={() => { setVerSuper((v) => !v); setSuperUnidad(null); setVerRanking(false); setVerCapas(false); setVerBarrido(false); setVerPetitorio(false); }}><Gem size={20} /></button>
-        <button title="Barrido de una región: puntúa muchas cuadrículas a la vez" aria-label="Barrido de región" className={verBarrido ? "activo-barrido" : ""}
+        <button title="Barrido de una región: puntúa muchas cuadrículas a la vez" aria-label="Barrido de región" className={verBarrido ? "secundario activo-barrido" : "secundario"}
           onClick={() => { setVerBarrido((v) => !v); setVerSuper(false); setVerCapas(false); }}><Radar size={20} /></button>
         <button title="Ruta por carretera: toca un punto del mapa" aria-label="Ruta por carretera" className={modoRuta ? "activo-ruta" : ""}
           onClick={() => { setModoRuta((v) => !v); setCeldaSel(null); }}><Route size={20} /></button>
-        <button title="Petitorio minero: pasos y cuadrículas de 100 ha" aria-label="Petitorio minero" className={verPetitorio ? "activo" : ""}
+        <button title="Petitorio minero: pasos y cuadrículas de 100 ha" aria-label="Petitorio minero" className={verPetitorio ? "secundario activo" : "secundario"}
           onClick={() => { setVerPetitorio((v) => !v); setVerSuper(false); setVerCapas(false); setVerBarrido(false); }}><ClipboardCheck size={20} /></button>
-        <span className="sep" />
-        <button title={`Mapa base: ${base === "satelite" ? "satélite" : base === "relieve" ? "relieve" : "topográfico"} (tocar para cambiar)`} aria-label="Cambiar mapa base"
+        <span className="sep secundario" />
+        <button className="secundario" title={`Mapa base: ${base === "satelite" ? "satélite" : base === "relieve" ? "relieve" : "topográfico"} (tocar para cambiar)`} aria-label="Cambiar mapa base"
           onClick={() => {
             const sig = base === "satelite" ? "relieve" : base === "relieve" ? "mapa" : "satelite";
             setBase(sig);
@@ -2518,10 +2534,15 @@ export default function App() {
           {base === "satelite" ? <Satellite size={20} /> : base === "relieve" ? <Mountain size={20} /> : <IconoMapa size={20} />}
         </button>
         <button title="Mi ubicación" aria-label="Mi ubicación" onClick={miUbicacion}><LocateFixed size={20} /></button>
-        <button title="Ir a la fábrica" aria-label="Ir a la fábrica" onClick={() => {
+        <button className="secundario" title="Ir a la fábrica" aria-label="Ir a la fábrica" onClick={() => {
           setCapas((c) => ({ ...c, fabrica: true }));
           mapaRef.current?.irAPunto(fabrica[0], fabrica[1], 12);
         }}><Factory size={20} /></button>
+        <button className={masAbierto ? "solo-cel activo" : "solo-cel"} title="Más herramientas" aria-label="Más herramientas"
+          onClick={() => setMasAbierto((v) => !v)}>
+          {masAbierto ? <X size={20} /> : <MoreHorizontal size={20} />}
+          {!masAbierto && vig.noLeidas > 0 && <span className="insignia">{vig.noLeidas}</span>}
+        </button>
         </>}
       </div>
 
@@ -2819,8 +2840,14 @@ export default function App() {
 
       {/* ---------- leyenda flotante: qué estás viendo ahora ---------- */}
       {(geologiaVisible || sentinelVisible || formacionSel) && !verCapas && !verCatalogo && !sugerir
-        && (!res || hoja === "cerrada") && (
+        && (!res || hoja === "cerrada") && (leyendaPlegada ? (
+        <button className="viendo-mini" onClick={() => plegarLeyenda(false)} title="Mostrar la leyenda de lo que se ve en el mapa">
+          <Layers size={14} /> Leyenda
+        </button>
+      ) : (
         <div className="viendo" onClick={() => setVerCapas(true)} title="Tocar para cambiar las capas">
+          <button className="plegar-leyenda" aria-label="Plegar la leyenda" title="Plegar la leyenda"
+            onClick={(e) => { e.stopPropagation(); plegarLeyenda(true); }}><X size={13} /></button>
           {sentinelVisible && (
             <>
               {/* de arriba hacia abajo, en el mismo orden en que se apilan en el mapa */}
@@ -2860,7 +2887,7 @@ export default function App() {
           )}
           <small className="cambiar">▤ cambiar capas</small>
         </div>
-      )}
+      ))}
 
       {/* ---------- hoja de resultados ---------- */}
       {res && hojaOculta && (
@@ -3604,8 +3631,12 @@ export default function App() {
         );
       })()}
 
-      {fase === "inicio" && !res && !area && !celdaSel && !formacionSel && !verCatalogo && !sugerir && !resaltado && (
+      {fase === "inicio" && !res && !area && !celdaSel && !formacionSel && !verCatalogo && !sugerir && !resaltado && !bienvenidaVista && (
         <div className="bienvenida">
+          <button className="cerrar-bienvenida" aria-label="Cerrar" onClick={() => {
+            setBienvenidaVista(true);
+            try { localStorage.setItem("prospector-rmi:bienvenida-vista", "1"); } catch { /* sin almacenamiento */ }
+          }}><X size={14} /></button>
           <span><b>Toca una cuadrícula</b> del mapa o escribe su código arriba, y elige <b>«Analizar cuadrícula»</b>.</span>
           <small>Clic derecho (o un toque) enfoca la cuadrícula · ★ guarda en carpetas · la biblioteca reúne tus carpetas y las formaciones de interés.</small>
         </div>

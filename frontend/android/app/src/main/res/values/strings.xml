@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Prospector RMI</string>
+    <string name="title_activity_main">Prospector RMI</string>
+    <string name="package_name">pe.prospector.rmi</string>
+    <string name="custom_url_scheme">pe.prospector.rmi</string>
+</resources>

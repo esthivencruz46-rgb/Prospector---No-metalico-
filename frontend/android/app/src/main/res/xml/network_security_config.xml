@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GEOCATMIN (INGEMMET) no envía el certificado intermedio Sectigo OV R36: Windows y Chrome de escritorio lo
+     completan solos, pero Android lo rechaza («Trust anchor for certification path not found») y las capas de
+     geología, catastro y áreas protegidas no cargaban en el APK (verificado en el emulador, 25/11/2026). Se agrega
+     ese intermedio SOLO para ingemmet.gob.pe (mismo archivo que backend/certs/sectigo_ov_r36.pem; vence en 2036). -->
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">ingemmet.gob.pe</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/sectigo_ov_r36" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
