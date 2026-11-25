@@ -194,12 +194,15 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
             indice: "Férrico (B4/B2 + B4/B3: hematita, goethita, limonita) + ferroso (B11/B8A: máficos, clorita, biotita)",
             ley: leyendaClases(0, "menos hierro", "lo más ferruginoso").map((x) => [x.color, x.texto]) },
         }[t];
-        const enUds = porUnidad && (t !== "bsi" || (s2?.datos?.formato ?? 0) >= 4);   // BSI por unidad desde el formato 4
+        const enUds = porUnidad;   // también el BSI: recortado a las unidades (percentiles por unidad desde el formato 4)
+        const bsiSoloRecorte = t === "bsi" && (s2?.datos?.formato ?? 0) < 4;
         return { ...base, titulo: enUds ? T.titulo.replace(" al 100 %", "").replace(/ \(Sentinel-2\)$/, "") + " · unidades elegidas" : T.titulo,
           capas: [capa(s2!.capas!.natural, 1), capa(img, op)],
           leyenda: T.ley.map(([color, texto]) => ({ color, texto })),
           datos: [...datosBase.slice(0, 2), ["Toma Sentinel-2", toma], ["Índice", T.indice],
-            ["Escala", enUds ? (t === "ferruginosas" ? "10 clases (deciles) dentro de cada unidad elegida" : "Continua: percentil de cada píxel dentro de su unidad")
+            ["Escala", enUds ? (t === "ferruginosas" ? "10 clases (deciles) dentro de cada unidad elegida"
+              : bsiSoloRecorte ? "Continua: percentil en la cuadrícula, mostrada solo dentro de las unidades elegidas"
+              : "Continua: percentil de cada píxel dentro de su unidad")
               : t === "ferruginosas" ? "10 clases de igual número de píxeles (deciles), 100 % de los datos"
               : "Continua, 100 % de los datos: percentil de cada píxel en la cuadrícula (sin corte)"],
             ...(enUds ? [["Unidades", listaUds] as [string, string]] : []),

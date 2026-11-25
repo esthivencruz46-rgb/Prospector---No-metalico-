@@ -255,6 +255,7 @@ export async function siliceLimpiaPorUnidad(s2: ResultadoSentinel, c: Cortes,
   const res: ResultadoUnidad[] = [];
   const imFe = lienzo(n), imCl = lienzo(n), imNd = lienzo(n), imBs = lienzo(n);
   const f4 = formato >= 4;   // base B = 2 + 253·percentil de BSI en los píxeles con dato
+  const enUnidades = new Uint8Array(n);   // unión de las unidades elegidas (para recortar el BSI de análisis anteriores)
   const ferr = (o: number) => (formato >= 2 ? R[o] : (R[o] + R[o + 1]) >> 1);   // 0–255
   // rango dentro de la unidad: fracción de sus píxeles con nivel MENOR (empates = mismo rango)
   const rangoDe = (hist: Uint32Array, total: number) => {
@@ -281,6 +282,7 @@ export async function siliceLimpiaPorUnidad(s2: ResultadoSentinel, c: Cortes,
     for (let p = 0, o = 0; p < n; p++, o += 4) {
       if (M[o + 3] < 128) continue;
       nPix++;
+      enUnidades[p] = 1;
       if (B[o + 2] >= 2) { nDato++; hFe[ferr(o)]++; if (f3) hNd[R[o + 1]]++; if (f4) hBs[B[o + 2] - 2]++; }
       if (B[o] > 0) { nUtil++; hCl[R[o + 2]]++; }
     }
@@ -309,6 +311,18 @@ export async function siliceLimpiaPorUnidad(s2: ResultadoSentinel, c: Cortes,
   const capas: Record<string, string> = { ferruginosas: aUrl(imFe, w, h), arcillas: aUrl(imCl, w, h) };
   if (f3) capas.ndvi = aUrl(imNd, w, h);
   if (f4) capas.bsi = aUrl(imBs, w, h);
+  else if (s2.capas?.bsi) {
+    // análisis anterior al formato 4 (sin BSI por píxel): la capa BSI de la cuadrícula RECORTADA a las unidades elegidas
+    // (pedido del usuario: «el BSI abarca todo y yo solo quiero la litología que indico»); colores de la cuadrícula
+    const g = await leer(s2.capas.bsi);
+    if (g.w === w && g.h === h) {
+      for (let p = 0, o = 0; p < n; p++, o += 4) {
+        if (!enUnidades[p]) continue;
+        imBs[o] = g.d[o]; imBs[o + 1] = g.d[o + 1]; imBs[o + 2] = g.d[o + 2]; imBs[o + 3] = g.d[o + 3];
+      }
+      capas.bsi = aUrl(imBs, w, h);
+    }
+  }
   return { url: aUrl(img, w, h), unidades: res, capas };
 }
 
