@@ -1,0 +1,707 @@
+{
+ "serieA": [
+  {
+   "i": 59,
+   "num": 44,
+   "titulo": "BOLETIN DE MALA (26-J), LUNAHUANA (26-K),TUPE (26-L), CONAICA (26-M),",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/164",
+   "km": 14,
+   "area": {
+    "eolico": 125.2,
+    "chimu": 0.1,
+    "hualhuani": 13.7,
+    "marcavilca": 91.4
+   },
+   "tanda": 1,
+   "peso": 3
+  },
+  {
+   "i": 6,
+   "num": 47,
+   "titulo": "BOLETIN DE PISCO (28-K), GUADALUPE (28-L ), PUNTA GRANDE ( 29-K), ICA",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/167",
+   "km": 84,
+   "area": {
+    "eolico": 1123.7,
+    "hualhuani": 11.1
+   },
+   "tanda": 1,
+   "peso": 3
+  },
+  {
+   "i": 18,
+   "num": 26,
+   "titulo": "BOLETIN DE BARRANCA (22-H), AMBAR (22-I), OYON (22-J), HUACHO (23-H),",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/144",
+   "km": 227,
+   "area": {
+    "eolico": 363.7,
+    "chimu": 370.0,
+    "farrat": 28.6
+   },
+   "tanda": 1,
+   "peso": 3
+  },
+  {
+   "i": 61,
+   "num": 59,
+   "titulo": "BOLETIN DE CULEBRAS (20-G), CASMA (19-G), CHIMBOTE (19-F), BOL. 59-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/181",
+   "km": 415,
+   "area": {
+    "eolico": 319.8,
+    "farrat": 0.3
+   },
+   "tanda": 1,
+   "peso": 3
+  },
+  {
+   "i": 16,
+   "num": 69,
+   "titulo": "BOLETIN DE TARMA (23-L), LA OROYA (24-L), YAUYOS (25-L),  BOL. 69-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/192",
+   "km": 100,
+   "area": {
+    "chimu": 62.8,
+    "farrat": 2.0
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 88,
+   "num": 70,
+   "titulo": "BOLETIN DE HUANCAPI (28-Ñ), CHINCHEROS (28-Ñ), QUEROBAMBA (29-O), CHAV",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/193",
+   "km": 231,
+   "area": {
+    "hualhuani": 408.2
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 11,
+   "num": 83,
+   "titulo": "BOLETIN DE SAN MIGUEL (27-O), BOL. 83-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/39",
+   "km": 271,
+   "area": {
+    "huancane": 1.3
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 96,
+   "num": 76,
+   "titulo": "BOLETIN DE HUARAZ (20-H), RECUAY (20-I), LA UNION (20-J), CHIQUIAN (21",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/199",
+   "km": 305,
+   "area": {
+    "chimu": 702.9,
+    "farrat": 13.3
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 55,
+   "num": 27,
+   "titulo": "BOLETIN DE ANDAHUAYLAS (28-P), ABANCAY (28-Q) Y COTABAMBAS (28-R),  B",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/145",
+   "km": 328,
+   "area": {
+    "hualhuani": 337.6
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 97,
+   "num": 35,
+   "titulo": "BOLETIN DE CHALHUANCA (29-P), ANTABAMBA (29-Q), STO. TOMAS (29-R), BOL",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/154",
+   "km": 360,
+   "area": {
+    "hualhuani": 920.5
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 65,
+   "num": 60,
+   "titulo": "BOLETIN DE PALLASCA (17-H), TAYABAMBA (17-I), CORONGO 18-H, POMABAMBA",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/182",
+   "km": 419,
+   "area": {
+    "chimu": 609.6,
+    "farrat": 64.2
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 50,
+   "num": 58,
+   "titulo": "BOLETIN DE VELILLE (30-S) , YAURI (30-T) , AYAVIRI (30-U)  Y AZANGARO",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/179",
+   "km": 513,
+   "area": {
+    "hualhuani": 69.3,
+    "huancane": 355.1
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 128,
+   "num": 42,
+   "titulo": "BOLETIN DE LEVANTAMIENTO GEOLOGICO INTEGRADO DEL SUR DEL PERU (MOHO 31",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/162",
+   "km": 566,
+   "area": {
+    "hualhuani": 133.7,
+    "huancane": 825.0
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 49,
+   "num": 31,
+   "titulo": "BOLETIN DE CAJAMARCA (15-F), SAN MARCOS (15-G) Y CAJABAMBA (16-G), BOL",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/150",
+   "km": 612,
+   "area": {
+    "chimu": 943.7,
+    "farrat": 1132.1
+   },
+   "tanda": 1,
+   "peso": 2
+  },
+  {
+   "i": 43,
+   "num": 118,
+   "titulo": "BOLETIN DE QUITENI (24-Ñ) Y CANAIRE (25-Ñ)",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/77",
+   "km": 276,
+   "area": {
+    "vivian": 3.9
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 90,
+   "num": 78,
+   "titulo": "BOLETIN DE CHUCHURRAS (21-M), ULCUMAYO (22-L), OXAPAMPA (22-M) Y LA ME",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/201",
+   "km": 288,
+   "area": {
+    "cushabatay": 19.6,
+    "vivian": 47.5,
+    "agua_caliente": 7.0
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 1,
+   "num": 88,
+   "titulo": "BOLETIN DE CODO DEL POZUZO (20-M) Y  RIO PALCAZU (20-N), BOL. 88-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/44",
+   "km": 368,
+   "area": {
+    "vivian": 271.6,
+    "agua_caliente": 2.5
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 126,
+   "num": 98,
+   "titulo": "BOLETIN DE SAN ALEJANDRO (18-M), SANTA ROSA (18-N), RIO NOVA (19-M) Y",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/55",
+   "km": 442,
+   "area": {
+    "vivian": 254.3,
+    "agua_caliente": 7.5
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 70,
+   "num": 102,
+   "titulo": "BOLETIN DE SAN ROQUE (16-N), RIO CALLERIA (16-Ñ), SAN LUCAS (16-O), P",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/60",
+   "km": 610,
+   "area": {
+    "vivian": 216.0,
+    "agua_caliente": 20.2
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 74,
+   "num": 122,
+   "titulo": "BOLETIN DE MOYOBAMBA (13-J), SAPOSOA (14-J) Y JUANJUI (15-J)",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/82",
+   "km": 623,
+   "area": {
+    "cushabatay": 677.5,
+    "vivian": 140.5,
+    "agua_caliente": 595.2
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 19,
+   "num": 100,
+   "titulo": "BOLETIN DE SAN RAFAEL (15-K),  RIO CUSHABATAY (15-L)  E INAHUAYA (15-M",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/58",
+   "km": 625,
+   "area": {
+    "cushabatay": 205.1,
+    "vivian": 214.9,
+    "agua_caliente": 434.7
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 2,
+   "num": 101,
+   "titulo": "BOLETIN DE PUERTO ORIENTE (15-N), ANA MARIA (15-Ñ) Y RIO TAPICHE (15-O",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/59",
+   "km": 662,
+   "area": {
+    "cushabatay": 250.8,
+    "vivian": 881.6,
+    "agua_caliente": 615.1
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 34,
+   "num": 94,
+   "titulo": "BOLETIN DE TARAPOTO (13-K), PAPA PLAYA (13-L), UTCURARCA (14-K) Y YANA",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/51",
+   "km": 682,
+   "area": {
+    "cushabatay": 947.0,
+    "vivian": 144.9,
+    "agua_caliente": 752.6
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 87,
+   "num": 115,
+   "titulo": "BOLETIN DE CAHUAPANAS (11-I) Y NUEVA CAJAMARCA (12-I),  BOL.115-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/74",
+   "km": 800,
+   "area": {
+    "cushabatay": 805.7,
+    "vivian": 45.0,
+    "agua_caliente": 882.7
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 8,
+   "num": 117,
+   "titulo": "BOLETIN DE URACUSA (10-G) Y CACHIYACU (11-H)",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/76",
+   "km": 861,
+   "area": {
+    "cushabatay": 851.0,
+    "vivian": 67.2,
+    "agua_caliente": 574.0
+   },
+   "tanda": 1,
+   "peso": 1
+  },
+  {
+   "i": 71,
+   "num": 17,
+   "titulo": "BOLETIN DE PUEMAPE (16-D), CHOCOPE (16-E), OTUZCO (16-F), TRUJILLO ( 1",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/134",
+   "km": 531,
+   "area": {
+    "eolico": 192.7,
+    "chimu": 294.6,
+    "farrat": 84.0
+   },
+   "tanda": 2,
+   "peso": 3
+  },
+  {
+   "i": 56,
+   "num": 38,
+   "titulo": "BOLETIN DE JAYANCA (13-D), INCAHUASI (13-E), CUTERVO (13-F), CHICLAYO",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/157",
+   "km": 688,
+   "area": {
+    "eolico": 98.2,
+    "chimu": 169.8,
+    "farrat": 177.2
+   },
+   "tanda": 2,
+   "peso": 3
+  },
+  {
+   "i": 52,
+   "num": 54,
+   "titulo": "BOLETIN DE ZARUMILLA (7-C), ZORRITOS (8-B), TUMBES (8-C), LOBITOS (9-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/175",
+   "km": 986,
+   "area": {
+    "eolico": 269.8
+   },
+   "tanda": 2,
+   "peso": 3
+  },
+  {
+   "i": 75,
+   "num": 51,
+   "titulo": "BOLETIN DE CHULCA (30-Q) Y CAYARANI (30-R),  BOL. 51-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/172",
+   "km": 405,
+   "area": {
+    "hualhuani": 152.8
+   },
+   "tanda": 2,
+   "peso": 2
+  },
+  {
+   "i": 29,
+   "num": 46,
+   "titulo": "BOLETIN DE HUAMBO (32-R) Y ORCOPAMPA (31-R), BOL. 46-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/166",
+   "km": 498,
+   "area": {
+    "hualhuani": 146.0
+   },
+   "tanda": 2,
+   "peso": 2
+  },
+  {
+   "i": 67,
+   "num": 74,
+   "titulo": "BOLETIN DE NUÑOA (29-U), BOL. 74-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/197",
+   "km": 596,
+   "area": {
+    "huancane": 315.5
+   },
+   "tanda": 2,
+   "peso": 2
+  },
+  {
+   "i": 78,
+   "num": 56,
+   "titulo": "BOLETIN DE BAGUA GRANDE (12-G), JUMBILLA (12-H), LONYA GRANDE (13-G),",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/177",
+   "km": 654,
+   "area": {
+    "chimu": 4.9,
+    "farrat": 47.3,
+    "cushabatay": 293.0,
+    "vivian": 38.4,
+    "agua_caliente": 153.7
+   },
+   "tanda": 2,
+   "peso": 2
+  },
+  {
+   "i": 99,
+   "num": 14,
+   "titulo": "BOLETIN DE ICHUÑA  (33-U), BOL. 14-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/131",
+   "km": 694,
+   "area": {
+    "hualhuani": 194.2
+   },
+   "tanda": 2,
+   "peso": 2
+  },
+  {
+   "i": 14,
+   "num": 85,
+   "titulo": "BOLETIN DE BAJO PICHANAQUI (22-N) Y PUERTO BERMUDEZ (21-N), BOL. 85-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/41",
+   "km": 297,
+   "area": {
+    "vivian": 89.0
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 21,
+   "num": 112,
+   "titulo": "BOLETIN DE AUCAYACU (18-K), RIO SANTA ANA (18-1) Y TINGO MARIA (19-K),",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/71",
+   "km": 465,
+   "area": {
+    "cushabatay": 159.9,
+    "vivian": 78.6,
+    "agua_caliente": 210.5
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 76,
+   "num": 93,
+   "titulo": "BOLETIN DE NUEVO EDEN (17-L) Y PUERTO BOLIVAR (17-M), BOL. 93-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/50",
+   "km": 515,
+   "area": {
+    "cushabatay": 307.1,
+    "vivian": 10.4,
+    "agua_caliente": 96.6
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 24,
+   "num": 97,
+   "titulo": "BOLETIN DE RIO BIABO (16-K),  MANCO CAPAC (16-J) Y VENCEDOR (16-M), BO",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/54",
+   "km": 571,
+   "area": {
+    "cushabatay": 293.6,
+    "vivian": 128.7,
+    "agua_caliente": 221.7
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 10,
+   "num": 81,
+   "titulo": "BOLETIN DE PUERTO LUZ (26-U),  COLORADO (26-V),  LABERINTO (26-X), PUE",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/37",
+   "km": 598,
+   "area": {
+    "vivian": 86.8
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 22,
+   "num": 92,
+   "titulo": "BOLETIN DE DOS  DE  MAYO (13-M) Y  ORELLANA (14-M), BOL. 92-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/49",
+   "km": 691,
+   "area": {
+    "cushabatay": 45.3,
+    "vivian": 78.3,
+    "agua_caliente": 144.5
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 73,
+   "num": 96,
+   "titulo": "BOLETIN DE SUNGARO (13-N) Y CAPANAHUA (14-N), BOL. 96-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/53",
+   "km": 704,
+   "area": {
+    "vivian": 87.0
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 107,
+   "num": 103,
+   "titulo": "BOLETIN DE BALSAPUERTO (12-J) Y YURIMAGUAS (12-K),BOL. 103-A",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/61",
+   "km": 788,
+   "area": {
+    "cushabatay": 451.1,
+    "vivian": 43.0,
+    "agua_caliente": 464.7
+   },
+   "tanda": 2,
+   "peso": 1
+  },
+  {
+   "i": 95,
+   "num": 99,
+   "titulo": "BOLETIN DE TENIENTE PINGLO (9-H) , SANTA MARIA DE NIEVA (10-H), PUERTO",
+   "autor": "INGEMMET",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/57",
+   "km": 912,
+   "area": {
+    "cushabatay": 257.2,
+    "vivian": 111.7,
+    "agua_caliente": 33.5
+   },
+   "tanda": 2,
+   "peso": 1
+  }
+ ],
+ "serieB": [
+  {
+   "num": "26-B",
+   "titulo": "Estudio Geológico Económico de las Rocas y Minerales Industriales en las regiones de Moquegua y Tacna",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/218",
+   "area": {
+    "eolico": 161.6,
+    "hualhuani": 338.5
+   }
+  },
+  {
+   "num": "30-B",
+   "titulo": "Evaluación de Rocas y Minerales Industriales en la Región Puno",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/229",
+   "area": {
+    "hualhuani": 83.5,
+    "vivian": 99.2,
+    "huancane": 1567.3
+   }
+  },
+  {
+   "num": "22-B",
+   "titulo": "Estudio geológico-económico de rocas y minerales industriales de Arequipa y alrededores",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/215",
+   "area": {
+    "eolico": 223.1,
+    "hualhuani": 108.3
+   }
+  },
+  {
+   "num": "32-B",
+   "titulo": "Estudio geológico económico de rocas y minerales industriales en la región Madre de Dios [Boletín B 32]",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/228",
+   "area": {
+    "vivian": 116.3
+   }
+  },
+  {
+   "num": "33-B",
+   "titulo": "Evaluación de las Rocas y Minerales Industriales por Regiones (Cajamarca)",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/227",
+   "area": {
+    "chimu": 751.5,
+    "farrat": 1220.3
+   }
+  },
+  {
+   "num": "11-B",
+   "titulo": "Estudio de los Recursos Minerales del Perú, Franja N° 2",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/204",
+   "area": {
+    "eolico": 677.1,
+    "hualhuani": 1946.4,
+    "huancane": 1788.2
+   }
+  },
+  {
+   "num": "12-B",
+   "titulo": "Estudio de los Recursos Minerales del Perú, Franja N° 3",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/209",
+   "area": {
+    "eolico": 576.9,
+    "chimu": 119.1,
+    "farrat": 34.0,
+    "hualhuani": 688.3,
+    "vivian": 272.1,
+    "marcavilca": 95.0,
+    "agua_caliente": 68.6,
+    "huancane": 126.8
+   }
+  },
+  {
+   "num": "14-B",
+   "titulo": "Estudio de los Recursos Minerales del Perú, Franja N° 4",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/213",
+   "area": {
+    "eolico": 408.2,
+    "chimu": 826.3,
+    "farrat": 82.7,
+    "cushabatay": 28.5,
+    "vivian": 181.2,
+    "marcavilca": 1.8,
+    "agua_caliente": 23.0
+   }
+  },
+  {
+   "num": "8-B",
+   "titulo": "Estudio de los Recursos Minerales del Perú, Franja N° 1",
+   "link": "https://repositorio.ingemmet.gob.pe/handle/20.500.12544/235",
+   "area": {
+    "eolico": 304.9,
+    "hualhuani": 486.4,
+    "huancane": 2.3
+   }
+  }
+ ],
+ "tot_u": {
+  "eolico": 3032.7,
+  "chimu": 3661.3,
+  "farrat": 1773.5,
+  "hualhuani": 3153.5,
+  "cushabatay": 6433.1,
+  "vivian": 3872.5,
+  "marcavilca": 112.1,
+  "agua_caliente": 5677.1,
+  "huancane": 1924.9
+ }
+}

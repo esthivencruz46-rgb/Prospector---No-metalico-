@@ -1,0 +1,523 @@
+{
+ "fichas": {
+  "eolico": {
+   "madurez": "Variable. El boletín 47-A separa mantos finos y claros «compuestos mayormente de cuarzo» de mantos gruesos oscuros con ferromagnesianos; las arenas de playa llevan granos volcánicos.",
+   "certeza": "Media: descripción textual de 7 boletines; sin análisis químico en la Serie B.",
+   "definicion": "Unidad cartográfica cuaternaria (no formal en sentido estratigráfico): mantos de arena, dunas barjanas y pampas costeras modeladas por los vientos alisios del S–SSW.",
+   "puntos": [
+    [
+     "Madurez textural",
+     "Alta: el viento selecciona y redondea el grano (fino a medio, «bien seleccionado», «bien redondeado» en las descripciones de INGEMMET)."
+    ],
+    [
+     "Madurez composicional",
+     "DEPENDE DE LA FUENTE. En la bahía de Paracas, las trampas eólicas de INGEMMET–IRD–IMARPE dieron 30–50 % de cuarzo, 35–50 % de feldespato, 5–20 % de micas y 0–5 % de carbonatos (CPG18161, p. 3): es una arena ARCÓSICA, no supermadura. En el cuadrángulo de Córdova (28-m) los depósitos eólicos se describen como «arenas cuarzo feldespáticas con micas y magnetita» (P1050, p. 8)."
+    ],
+    [
+     "Implicancia",
+     "La palabra «cuarzosa» de la carta no basta: la madurez composicional se confirma con petrografía/DRX y química (Fe₂O₃, Al₂O₃ alto = feldespato). Los mantos que retrabajan areniscas cretácicas cuarzosas (p. ej., derivadas de Goyllarisquizga) tienden a ser más puros que los que retrabajan arenas de playa y rocas volcánicas."
+    ]
+   ],
+   "refs": [
+    "CPG18161",
+    "P1050",
+    "GEOCATMIN"
+   ]
+  },
+  "marcavilca": {
+   "madurez": "Supermadura: Q 92–96 %, F 0 % (Alvan et al., 2025); «cuarcitas y areniscas cuarzosas gris blanquecinas» (44-A).",
+   "certeza": "Alta (petrografía cuantitativa); sin química de canteras.",
+   "definicion": "Grupo Morro Solar (Fernández-Concha, 1958), sobre el Grupo Puente Piedra y bajo la Fm. Pamplona (Rivera, 1951). Formaciones: Salto del Fraile, La Herradura y Marcavilca (miembros Morro Solar, Marcavilca y La Chira) (BSGP110181, p. 1 y 4). Edad Berriasiano superior–Valanginiano (ALVAN2025).",
+   "puntos": [
+    [
+     "Petrografía (QFL)",
+     "Conteo Gazzi-Dickinson del Miembro Marcavilca: Q = 92–96 %, F = 0 %, L = 4–7 % (muestras MO-55 a MO-58, Tabla 2). El feldespato es < 4 % en todo el grupo y prácticamente ausente en la Fm. Marcavilca (ALVAN2025, p. 12–13)."
+    ],
+    [
+     "Textura",
+     "Cuarzo de grano fino a medio, subanguloso a subredondeado, con crecimiento sintaxial (cemento silíceo) y contactos largos: roca compacta → requiere trituración."
+    ],
+    [
+     "Afloramientos",
+     "Morro Solar (Chorrillos), cerros de Lima sur y Lunahuaná (Punta de Asia, cerro Corral Omasino, Hualcará Grande, Quilmaná, cerro Isla; P1152, p. 5). En gran parte urbano o zona arqueológica/turística."
+    ]
+   ],
+   "refs": [
+    "ALVAN2025",
+    "BSGP110181",
+    "P1152",
+    "GEOCATMIN"
+   ]
+  },
+  "chimu": {
+   "madurez": "Supermadura confirmada por química: 6 canteras de la Fm. Chimú en Cajamarca con SiO₂ 92,3–98,3 % y Fe₂O₃ 0,06–0,21 % (33-B); «ortocuarcita» (26-A), grano redondeado a subredondeado (17-A).",
+   "certeza": "Muy alta: petrografía + química de laboratorio (INGEMMET).",
+   "definicion": "Stappenbeck (1929) la describió como «cuarcitas del Wealdiano»; Benavides (1956) la designó Formación Chimú con localidad típica en Baños del Alto Chicama (La Libertad) (P1035, p. 8). Base del Grupo Goyllarisquizga; Valanginiano.",
+   "puntos": [
+    [
+     "Litología",
+     "Areniscas cuarzosas y ortocuarcitas blancas de grano fino a medio, en bancos gruesos, con intercalaciones de lutitas y mantos de carbón (descripciones de GEOCATMIN). Son SEDIMENTARIAS: «cuarcita» por el cemento silíceo, no por metamorfismo."
+    ],
+    [
+     "Procedencia",
+     "Las areniscas del Grupo Goyllarisquizga son cuarzoarenitas de un orógeno reciclado rico en cuarzo (Sánchez et al., 2012, citado en CPG1847, p. 1)."
+    ],
+    [
+     "Implicancia",
+     "Doble comportamiento: en la sierra de Lima–Áncash es ortocuarcita recristalizada y dura (26-A), pero en Cajamarca las canteras explotan horizontes de «arenas silíceas… disgregables» de 8,5 a 25 m (33-B), que se extraen sin voladura y solo requieren lavado y clasificación. Priorizar los niveles disgregables."
+    ]
+   ],
+   "refs": [
+    "P1035",
+    "CPG1847",
+    "GEOCATMIN"
+   ]
+  },
+  "farrat": {
+   "madurez": "Madura a supermadura, más variable: «ortocuarcitas blancas» (17-A); 4 canteras con SiO₂ 92,2–95,5 % y Fe₂O₃ 0,13–1,02 % (33-B); óxidos en fracturas obligan a lavar (Lavasil 1).",
+   "certeza": "Alta: petrografía + química.",
+   "definicion": "Nombrada por Stappenbeck (1929) para una secuencia de areniscas cuarzosas sobre las limolitas de la Fm. Carhuaz; techo del Grupo Goyllarisquizga; Barremiano superior–Aptiano; litoral-deltaica (BSGP110).",
+   "puntos": [
+    [
+     "Litología",
+     "Areniscas cuarzosas blancas de grano medio a grueso en capas gruesas; en la 1:100 000 aparece con areniscas y limolitas rojizas (descripciones de GEOCATMIN)."
+    ],
+    [
+     "Pureza documentada",
+     "En el Grupo Goyllarisquizga de Chachapoyas (cantera Peña Blanca, ocurrencia Huilcabamba) INGEMMET reporta areniscas eólicas con > 95 % de cuarzo, poca o nula matriz, y muestras con > 97 % de SiO₂ y < 0,5 % de Fe₂O₃ (CPG1847, p. 1)."
+    ],
+    [
+     "Implicancia",
+     "Menos compacta que Chimú en varios sectores (CPG1847 la señala favorable para vidrio, cerámica y fundente)."
+    ]
+   ],
+   "refs": [
+    "BSGP110",
+    "CPG1847",
+    "P1033",
+    "GEOCATMIN"
+   ]
+  },
+  "hualhuani": {
+   "madurez": "Madura por textura («limpieza de sus elementos, selección, madurez», 46-A), pero las canteras de Tacna y Puno dan SiO₂ 90–93 % y Fe₂O₃ 0,5–1,1 % (óxidos en fracturas): hoy es sílice para fundente.",
+   "certeza": "Alta: descripción + química (26-B, 30-B).",
+   "definicion": "Techo del Grupo Yura (formaciones Cachíos, Labra y Hualhuani); Cretácico inferior (Berriasiano–Barremiano según GEOCATMIN: 145–121,4 Ma).",
+   "puntos": [
+    [
+     "Litología",
+     "«Areniscas cuarzosas maduras blancas con intercalaciones menores de limolitas pizarrosas» (P1053, p. 5, cuadrángulo de Laramate). En Córdova: «gruesa secuencia de cuarcitas blancas en estratos delgados» en la localidad de Callusca y Mina Minas (P1050, p. 9). GEOCATMIN la clasifica como «cuarciarenita»."
+    ],
+    [
+     "Espesor",
+     "≈ 250–500 m según la sección (P1050, P1053)."
+    ],
+    [
+     "Implicancia",
+     "Principal unidad cuarzosa del sur (Arequipa, Moquegua, Tacna, Puno, Apurímac), roca dura. Las canteras activas de Tacna y Puno la venden como fundente (SiO₂ 90–93 %) porque el hierro está en óxidos y vetillas de las fracturas (26-B): para vidrio habría que buscar bancos blancos sin fracturas oxidadas y lavar."
+    ]
+   ],
+   "refs": [
+    "P1053",
+    "P1050",
+    "GEOCATMIN"
+   ]
+  },
+  "cushabatay": {
+   "madurez": "Madura: «secuencia monótona de areniscas cuarzosas… granos subredondeados y ligeramente friables» (100-A).",
+   "certeza": "Media: descripciones de 21 boletines; sin química.",
+   "definicion": "Base del Grupo Oriente (Kummel, 1946, sección del río Cushabatay ≈ 750 m; CLG1207). Parte inferior antes incluida en Cushabatay se separa hoy como Fm. Shaypaya (conglomerados y areniscas cíclicas; CLG1207).",
+   "puntos": [
+    [
+     "Litología",
+     "Base: bancos de 3–4 m de areniscas cuarzosas blanco-amarillentas de grano medio a grueso, en parte conglomerádicas, fluviales. Parte superior: areniscas cuarzosas blancas masivas con laminación oblicua e intercalaciones de lutitas, litorales (CPG15208, p. 3; CPG16074, p. 2)."
+    ],
+    [
+     "Implicancia",
+     "Selva alta y faja subandina: cobertura vegetal, acceso y distancia son limitantes."
+    ]
+   ],
+   "refs": [
+    "CPG15208",
+    "CPG16074",
+    "CLG1207",
+    "GEOCATMIN"
+   ]
+  },
+  "vivian": {
+   "madurez": "Supermadura por petrografía: clasificada como «cuarzo-arenitas… deleznables con un aspecto sacaroide» (98-A); «bien seleccionadas, friables, con poca matriz arcillosa» (94-A); granos «subredondeados a redondeados» de transporte eólico (32-B).",
+   "certeza": "Alta en petrografía (24 boletines); sin química.",
+   "definicion": "Formación Vivian (Kummel, 1948); localidad tipo en la quebrada Vivian (Contamana), donde Morán y Fyfe (1933) la llamaron «areniscas azúcar» (CPG1810, p. 1). Campaniano (Jaillard, 1995), quizá desde el Santoniano.",
+   "puntos": [
+    [
+     "Litología",
+     "Areniscas cuarzosas de grano fino a medio, gris claro a blanco amarillento, con estratificación cruzada, fluvio-deltaicas; ≈ 100 m (CPG15208, p. 3; CPG1810)."
+    ],
+    [
+     "Implicancia",
+     "Reservorio petrolero clásico; tramo superior rojizo (óxidos) → elegir la base."
+    ]
+   ],
+   "refs": [
+    "CPG1810",
+    "CPG15208",
+    "GEOCATMIN"
+   ]
+  },
+  "huancane": {
+   "madurez": "Heterogénea: «pueden variar de sublitarenitas a cuarzoarenitas» (74-A); con niveles arcósicos y muy feldespáticos (58-A).",
+   "certeza": "Media: química solo de una ocurrencia (SiO₂ > 90 %).",
+   "definicion": "Definida por Newell (1949) en el Altiplano (Puno); Neocomiano; equivalente meridional del Grupo Goyllarisquizga (CARLOTTO).",
+   "puntos": [
+    [
+     "Petrografía",
+     "Areniscas blancas o rosadas con «más de 90 % de cuarzo, algunos feldespatos» y restos líticos; fluviales, con conglomerados y lutitas (CARLOTTO, p. 3)."
+    ],
+    [
+     "Implicancia",
+     "Tramos rosados = hierro; seleccionar los bancos blancos."
+    ]
+   ],
+   "refs": [
+    "CARLOTTO",
+    "GEOCATMIN"
+   ]
+  },
+  "agua_caliente": {
+   "madurez": "Madura a supermadura por textura: «areniscas cuarzosas bien seleccionadas» (32-B); lámina delgada con abundante cuarzo subredondeado (92-A). Ojo: es la roca del yacimiento petrolífero de Agua Caliente (Ganso Azul, 98-A).",
+   "certeza": "Media: sin química.",
+   "definicion": "Secuencia Agua Caliente (Morán y Fyfe, 1933); miembro de la Fm. Oriente según Kummel (1946); localidad típica en Agua Caliente, Contamana (Loreto). Cretácico inferior (Albiano).",
+   "puntos": [
+    [
+     "Litología",
+     "Areniscas cuarzosas blancas a cremas de grano fino a medio con lutitas y limolitas (CLG1207, columna del río Cushabatay; descripciones de GEOCATMIN)."
+    ]
+   ],
+   "refs": [
+    "CLG1207",
+    "GEOCATMIN"
+   ]
+  },
+  "goyllarisquizga": {
+   "madurez": "Madura a supermadura: mismo paquete que Chimú + Farrat donde no se separaron; «areniscas blancas friables» (76-A).",
+   "certeza": "Alta: 9 canteras con química en Cajamarca (Utco 98,6 % SiO₂; Sumiate 96,9 %).",
+   "definicion": "Grupo del Cretácico inferior que, sin dividir, incluye Oyón, Chimú, Santa, Carhuaz y Farrat.",
+   "puntos": [
+    [
+     "Ojo",
+     "Sin dividir incluye también las calizas de Santa y las lutitas de Carhuaz: en cada cuadrícula hay que ubicar los bancos de arenisca blanca."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "oriente": {
+   "madurez": "Madura a supermadura (como Cushabatay y Agua Caliente): areniscas cuarzosas blancas con estratificación cruzada.",
+   "certeza": "Media: sin química.",
+   "definicion": "Kummel (1946); Cretácico inferior de la faja subandina y la llanura amazónica (Cushabatay, Esperanza, Agua Caliente).",
+   "puntos": [
+    [
+     "Ojo",
+     "Incluye la Fm. Esperanza (lutitas y calizas): los niveles útiles son la base (Cushabatay) y el tope (Agua Caliente)."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "labra": {
+   "madurez": "Madura, no supermadura: areniscas cuarcíticas gris claras a parduzcas «con óxidos de hierro» (22-B).",
+   "certeza": "Media: sin química publicada.",
+   "definicion": "Grupo Yura, Jurásico superior; 807 m en la sección típica (quebrada Cachios y cerro Labra, Arequipa).",
+   "puntos": [
+    [
+     "Uso",
+     "La cantera Oxana (Tacna) produjo sílice; en Yura (Arequipa) hay concesiones de sílice registradas en la Fm. Labra."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "oyon_chimu": {
+   "madurez": "Mezcla: Oyón son cuarcitas con limoarenitas negras y carbón; Chimú es la ortocuarcita supermadura.",
+   "certeza": "Media.",
+   "definicion": "Unidad de la carta 1:100 000 que junta las formaciones Oyón (Wilson, 1963) y Chimú.",
+   "puntos": [
+    [
+     "Ojo",
+     "Buscar los bancos de Chimú; los de Oyón traen carbón y lutitas negras."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "salto_fraile": {
+   "madurez": "Madura: «areniscas cuarzosas gris verdosas con intercalaciones de areniscas arcillosas y limolitas» (14-B, Grupo Morro Solar).",
+   "certeza": "Baja: sin química y con una sola descripción.",
+   "definicion": "Base del Grupo Morro Solar (Lima), Berriasiano; localidad tipo en el Morro Solar de Chorrillos.",
+   "puntos": [
+    [
+     "Cercanía",
+     "Aflora junto a Marcavilca, en Lima, cerca de la fábrica."
+    ]
+   ],
+   "refs": [
+    "ALVAN2025",
+    "GEOCATMIN"
+   ]
+  },
+  "naupe": {
+   "madurez": "Supermadura según la tabla de madurez, con certeza baja (pocas descripciones).",
+   "certeza": "Baja: sin boletín descargado.",
+   "definicion": "Unidad cenozoica de la costa norte.",
+   "puntos": [],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "yauca": {
+   "madurez": "Supermadura según la tabla de madurez, con certeza baja.",
+   "certeza": "Baja: sin boletín descargado.",
+   "definicion": "Unidad de la costa sur.",
+   "puntos": [],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_sandia": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_cerro_negro": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_rio_seco": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_contaya": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_figueroa": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_ccatca": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_chagrapi": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_excelsior": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_malaga": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  },
+  "m_iscaybamba": {
+   "madurez": "Metacuarcitas: el metamorfismo recristaliza el cuarzo, pero son sobre todo pizarras y filitas con bancos de cuarcita.",
+   "certeza": "Media a baja: descripciones generales; sin química.",
+   "definicion": "Rocas metamórficas paleozoicas (Ordovícico–Devónico) o más antiguas.",
+   "puntos": [
+    [
+     "Limitación",
+     "Las cuarcitas suelen ser oscuras (grafito, pirita) y con micas (muscovita, sericita): hierro y alúmina las alejan del vidrio. Sirven mejor como fundente o ferrosilicio si el banco es potente."
+    ]
+   ],
+   "refs": [
+    "GEOCATMIN"
+   ]
+  }
+ },
+ "orden": [
+  "eolico",
+  "marcavilca",
+  "salto_fraile",
+  "chimu",
+  "farrat",
+  "goyllarisquizga",
+  "hualhuani",
+  "labra",
+  "huancane",
+  "cushabatay",
+  "agua_caliente",
+  "oriente",
+  "vivian",
+  "naupe",
+  "yauca",
+  "m_sandia",
+  "m_cerro_negro",
+  "m_rio_seco",
+  "m_contaya",
+  "m_figueroa",
+  "m_ccatca",
+  "m_chagrapi",
+  "m_excelsior",
+  "m_malaga",
+  "m_iscaybamba"
+ ],
+ "fuentes": {
+  "P1035": [
+   "INGEMMET (2003). Memoria descriptiva de la revisión y actualización del cuadrángulo de Canta (23-j), cuadrante I. Dirección de Geología Regional.",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/P-1035.pdf"
+  ],
+  "P1033": [
+   "INGEMMET (2003). Memoria descriptiva de la revisión y actualización del cuadrángulo de Canta (23-j), cuadrante II.",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/P-1033.pdf"
+  ],
+  "BSGP110": [
+   "Boletín de la Sociedad Geológica del Perú v. 110, p. 110–114 (2015): estratigrafía del Grupo Goyllarisquizga; Fm. Farrat (Stappenbeck, 1929).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/BSGP-110-110.pdf"
+  ],
+  "CPG1847": [
+   "INGEMMET – XVIII Congreso Peruano de Geología (2016). Arena silícea del Grupo Goyllarisquizga al norte de Chachapoyas (cantera Peña Blanca, ocurrencia Huilcabamba).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/CPG18-47.pdf"
+  ],
+  "P1053": [
+   "INGEMMET (2003). Memoria descriptiva de la revisión y actualización del cuadrángulo de Laramate (29-n).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/P-1053.pdf"
+  ],
+  "P1050": [
+   "INGEMMET (2003). Memoria descriptiva de la revisión y actualización del cuadrángulo de Córdova (28-m).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/P-1050.pdf"
+  ],
+  "CPG15208": [
+   "Valdivia, W. et al. – XV Congreso Peruano de Geología (2010). Nuevas unidades reconocidas en el cartografiado del cuadrángulo de Aramango (11-g-IV), Cuenca Santiago (INGEMMET).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/CPG15-208.pdf"
+  ],
+  "CPG16074": [
+   "Valdivia, W.; Chacaltana, C.; Chumpitaz, M. & Peña, D. – XVI Congreso Peruano de Geología (2012). Cartografiado geológico del sector centro y sur de la Cuenca Santiago (INGEMMET).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/CPG16-074.pdf"
+  ],
+  "CLG1207": [
+   "Pariguana, A. – Formación Shaypaya: una nueva secuencia del Cretáceo inferior en la faja subandina (cuencas Ucayali y Marañón).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/CLG12-07.pdf"
+  ],
+  "CPG1810": [
+   "XVIII Congreso Peruano de Geología (2016). Sedimentología de la Formación Vivian en el río Apurucayali (Ucayali).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/CPG18-10.pdf"
+  ],
+  "ALVAN2025": [
+   "Alvan, A.; Criales, A. & Bernuy, A. (2025). Petrografía y proveniencia de las areniscas del Grupo Morro Solar (Berriasiano sup.–Valanginiano) de Lima. Andean Geology 52(2): 280–305. doi:10.5027/andgeoV52n2-3722.",
+   "https://andeangeology.cl/index.php/revista1/article/view/V52n2-3722"
+  ],
+  "BSGP110181": [
+   "Boletín de la Sociedad Geológica del Perú v. 110, p. 181–185 (2015): estructuras del Grupo Morro Solar (Chorrillos, Lima).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/BSGP-110-181.pdf"
+  ],
+  "P1152": [
+   "INGEMMET (2003). Memoria descriptiva de la revisión y actualización del cuadrángulo de Lunahuaná (26-k).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/P-1152.pdf"
+  ],
+  "CARLOTTO": [
+   "Carlotto, V.; Cárdenas, J.; Chávez, R. & Gil, W. Sedimentología de la Formación Huancané (Neocomiano) de la región de Cusco y su relación con las variaciones del nivel del mar.",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/Reg-2.pdf"
+  ],
+  "CPG18161": [
+   "INGEMMET – IRD – IMARPE, XVIII Congreso Peruano de Geología (2016). Transporte eólico de arenas en Paracas (Estación Eólica Experimental, proyecto MIXPALEO).",
+   "https://app.ingemmet.gob.pe/biblioteca/pdf/CPG18-161.pdf"
+  ],
+  "GEOCATMIN": [
+   "INGEMMET – GEOCATMIN: Geología integrada 1:50 000 (SERV_GEOLOGIA_50K_INTEGRADA, capa 7) y 1:100 000 (capa 6); índice de boletines SERV_BOLETINES. Copia local del 22/11/2026 y consulta del 23/11/2026.",
+   "https://geocatmin.ingemmet.gob.pe/geocatmin/"
+  ]
+ }
+}

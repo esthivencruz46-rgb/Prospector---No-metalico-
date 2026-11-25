@@ -1,0 +1,4651 @@
+[
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 35,
+  "leyenda": "FOTO 2.5 Valle encañonado con paredes verticales aguas abajo del Arenal (SE de La Peca) labrado en areniscas del Grupo Goyllarisquizga.",
+  "bbox": [
+   81.4,
+   474.9,
+   469.6,
+   496.0
+  ],
+  "pag_wh": [
+   566.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 149,
+    "bbox": [
+     0.0,
+     0.0,
+     566.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1575,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 35,
+  "archivo_img": "56-A_p35_0.jpg",
+  "recorte": [
+   172.8,
+   165.6,
+   396.0,
+   453.6
+  ],
+  "px": [
+   465,
+   600
+  ],
+  "idx": 0
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 91,
+  "leyenda": "Foto 4.23 Pizarras y lutitas gnses en posición subvertical asignadas a la Fm.Contaya en el corte de carretera entre Barro Negro y Abra de Chanchillo (Leimebamba).",
+  "bbox": [
+   73.1,
+   479.5,
+   471.2,
+   499.2
+  ],
+  "pag_wh": [
+   568.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1080,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "m_contaya"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "m_contaya",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 91,
+  "archivo_img": "56-A_p91_1.jpg",
+  "recorte": [
+   158.4,
+   151.2,
+   388.8,
+   475.2
+  ],
+  "px": [
+   480,
+   675
+  ],
+  "idx": 1
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 157,
+  "leyenda": "Foto 4.76 Areniscas del Grupo Goyllarisquizga en discordancia angular sobre el Complejo del Marañón. flanco derecho la Qda. El Palto viendo al NE (Lonya Grande).",
+  "bbox": [
+   91.2,
+   609.7,
+   481.3,
+   628.6
+  ],
+  "pag_wh": [
+   574.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1356,
+    "bbox": [
+     0.0,
+     0.0,
+     574.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1595,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 157,
+  "archivo_img": "56-A_p157_3.jpg",
+  "recorte": [
+   122.4,
+   367.2,
+   453.6,
+   604.8
+  ],
+  "px": [
+   690,
+   495
+  ],
+  "idx": 3
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 162,
+  "leyenda": "Foto 4.78 Detalle del contacto del Grupo Goyllarisquizga (ruditas) sobre esquistos del Complejo del Marañón, Qda. El Palto (Lonya Grande).",
+  "bbox": [
+   73.5,
+   624.2,
+   445.4,
+   643.7
+  ],
+  "pag_wh": [
+   568.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1381,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 162,
+  "archivo_img": "56-A_p162_4.jpg",
+  "recorte": [
+   72.0,
+   122.4,
+   446.4,
+   619.2
+  ],
+  "px": [
+   780,
+   1035
+  ],
+  "idx": 4
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 163,
+  "leyenda": "Foto 4.79 Secuencia superior, ambiente litoral del Grupo Goyllarisquizga en la margen izquierda del Marañón al NO de Lonya Grande.",
+  "bbox": [
+   91.1,
+   414.7,
+   490.9,
+   434.1
+  ],
+  "pag_wh": [
+   575.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1385,
+    "bbox": [
+     0.0,
+     0.0,
+     575.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1600,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 163,
+  "archivo_img": "56-A_p163_5.jpg",
+  "recorte": [
+   115.2,
+   122.4,
+   489.6,
+   396.0
+  ],
+  "px": [
+   780,
+   570
+  ],
+  "idx": 5
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 167,
+  "leyenda": "Foto 4.84 Grupo Goyllarisquizga sobreyaciendo en discordancia angular a la Fm. Aramachay en la Hoja de",
+  "bbox": [
+   88.4,
+   493.5,
+   486.2,
+   506.0
+  ],
+  "pag_wh": [
+   571.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1401,
+    "bbox": [
+     0.0,
+     0.0,
+     571.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1588,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 167,
+  "archivo_img": "56-A_p167_6.jpg",
+  "recorte": [
+   129.6,
+   122.4,
+   568.8,
+   468.0
+  ],
+  "px": [
+   915,
+   720
+  ],
+  "idx": 6
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 169,
+  "leyenda": "Foto4.86 Areniscas del Grupo Oriente al Este del paraje Mirador en el cuadrángulo de Jumbilla. -",
+  "bbox": [
+   85.3,
+   635.0,
+   578.4,
+   684.5
+  ],
+  "pag_wh": [
+   575.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1409,
+    "bbox": [
+     0.0,
+     0.0,
+     575.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1600,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "oriente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "oriente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 169,
+  "archivo_img": "56-A_p169_8.jpg",
+  "recorte": [
+   100.8,
+   403.2,
+   446.4,
+   633.6
+  ],
+  "px": [
+   720,
+   480
+  ],
+  "idx": 7
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 169,
+  "leyenda": "Foto4.85 Secuencia del Grupo Oriente en el tramo superior del río Nieva, viendo hacia el OSO (Jumbilla).",
+  "bbox": [
+   84.3,
+   372.2,
+   480.8,
+   383.5
+  ],
+  "pag_wh": [
+   575.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1409,
+    "bbox": [
+     0.0,
+     0.0,
+     575.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1600,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "oriente"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "oriente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 169,
+  "archivo_img": "56-A_p169_7.jpg",
+  "recorte": [
+   100.8,
+   122.4,
+   482.4,
+   367.2
+  ],
+  "px": [
+   795,
+   510
+  ],
+  "idx": 8
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 170,
+  "leyenda": "Foto 4.88 Grupo Oriente en el Morro Calzada (Rioja)",
+  "bbox": [
+   76.6,
+   637.9,
+   285.0,
+   650.5
+  ],
+  "pag_wh": [
+   568.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1413,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "oriente"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "oriente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 170,
+  "archivo_img": "56-A_p170_9.jpg",
+  "recorte": [
+   108.0,
+   396.0,
+   432.0,
+   633.6
+  ],
+  "px": [
+   675,
+   495
+  ],
+  "idx": 9
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 171,
+  "leyenda": "Foto 4.87 Areniscas cuarzosas del Gpo. Oriente sobre la Formación Sarayaquillo en el corte del río Salas. al sur de Vista Alegre (Ríoja).",
+  "bbox": [
+   90.9,
+   498.8,
+   486.9,
+   518.4
+  ],
+  "pag_wh": [
+   574.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1417,
+    "bbox": [
+     0.0,
+     0.0,
+     574.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1595,
+    "h": 2270
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "oriente",
+  "origen": "seccion",
+  "micro": false,
+  "pag_foto": 171,
+  "archivo_img": "56-A_p171_10.jpg",
+  "recorte": [
+   122.4,
+   122.4,
+   568.8,
+   496.8
+  ],
+  "px": [
+   930,
+   780
+  ],
+  "idx": 10
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 177,
+  "leyenda": "Foto4.92 MicroFotos de areniscas del Grupo Goyllarisquizga. a) Hda. Chalpón, b) Tambolic(Paccha), e) Bajada río San Antonio, d) Caclic(Ctlachapoyas). Se observa incremento de cuarzo policristalil'\\0 con extinción ondulante hacia los bloques prote- rozoico-paleozoico. (Fotos en la siguiente página)",
+  "bbox": [
+   92.0,
+   595.8,
+   493.5,
+   660.2
+  ],
+  "pag_wh": [
+   595.2,
+   841.7
+  ],
+  "imagenes": [
+   {
+    "xref": 1443,
+    "bbox": [
+     0.0,
+     0.0,
+     589.2,
+     826.3
+    ],
+    "frac": 0.972,
+    "w": 1600,
+    "h": 2240
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": true,
+  "pag_foto": 178,
+  "archivo_img": "56-A_p178_11.jpg",
+  "recorte": [
+   72.0,
+   129.6,
+   468.0,
+   705.6
+  ],
+  "px": [
+   825,
+   1200
+  ],
+  "idx": 11
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 201,
+  "leyenda": "Foto 4.106 Fm. Vivian en la parte alta del flanco izquierdo del río San Antonio, frente a San José.",
+  "bbox": [
+   75.9,
+   628.4,
+   434.9,
+   640.3
+  ],
+  "pag_wh": [
+   568.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1552,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 201,
+  "archivo_img": "56-A_p201_12.jpg",
+  "recorte": [
+   100.8,
+   403.2,
+   446.4,
+   626.4
+  ],
+  "px": [
+   720,
+   465
+  ],
+  "idx": 12
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 203,
+  "leyenda": "Foto 4.107 Areniscas cuarzosas de la Fm. Vivian, grano medio (a) y fino (b) bien seleccionadas tomadas de",
+  "bbox": [
+   82.1,
+   630.1,
+   480.9,
+   641.9
+  ],
+  "pag_wh": [
+   570.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1562,
+    "bbox": [
+     0.0,
+     0.0,
+     570.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1584,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 203,
+  "archivo_img": "56-A_p203_13.jpg",
+  "recorte": [
+   79.2,
+   115.2,
+   475.2,
+   626.4
+  ],
+  "px": [
+   825,
+   1065
+  ],
+  "idx": 13
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 216,
+  "leyenda": "Foto 4.113 Formación El Milagro infrayaciendo a la Fm. Bellavista al Norte de base homónima (Jaén).",
+  "bbox": [
+   101.9,
+   387.4,
+   478.5,
+   400.0
+  ],
+  "pag_wh": [
+   571.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1615,
+    "bbox": [
+     0.0,
+     0.0,
+     571.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1588,
+    "h": 2270
+   }
+  ],
+  "unidades": [],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 216,
+  "archivo_img": "56-A_p216_14.jpg",
+  "recorte": [
+   108.0,
+   122.4,
+   475.2,
+   374.4
+  ],
+  "px": [
+   765,
+   525
+  ],
+  "idx": 14
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 260,
+  "leyenda": "Foto 6.2 Cordillera Oriental al fondo Grupo Ambo, en primer plano Grupo Goyllarisquizga, Fin Chúlec y Gru-",
+  "bbox": [
+   77.1,
+   615.4,
+   478.0,
+   626.9
+  ],
+  "pag_wh": [
+   568.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1809,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 260,
+  "archivo_img": "56-A_p260_15.jpg",
+  "recorte": [
+   108.0,
+   374.4,
+   453.6,
+   612.0
+  ],
+  "px": [
+   720,
+   495
+  ],
+  "idx": 15
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 287,
+  "leyenda": "Foto 6.16 Vista hacia el sur se observa falla inversa de alto ángulo que ha levantado al Complejo del Marañón (de- recha) sobre las areniscas cuarzosas del Grupo Goyllarisquizga (izquierda).",
+  "bbox": [
+   81.4,
+   556.2,
+   496.8,
+   575.7
+  ],
+  "pag_wh": [
+   570.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1915,
+    "bbox": [
+     0.0,
+     0.0,
+     570.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1584,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 287,
+  "archivo_img": "56-A_p287_16.jpg",
+  "recorte": [
+   151.2,
+   223.2,
+   403.2,
+   547.2
+  ],
+  "px": [
+   525,
+   675
+  ],
+  "idx": 16
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 303,
+  "leyenda": "Foto 6.28 Flanco derecho del río Sonche en bajada de Chachapoyas, se observa discordancia angular Pucará-Mitu y discordancia angular Grupo Goyllarisquizga sobre Sarayaquillo y Pucará, nótese el grosor del Grupo Pucará.",
+  "bbox": [
+   83.6,
+   488.6,
+   479.4,
+   517.3
+  ],
+  "pag_wh": [
+   574.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1983,
+    "bbox": [
+     0.0,
+     0.0,
+     574.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1595,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 303,
+  "archivo_img": "56-A_p303_17.jpg",
+  "recorte": [
+   151.2,
+   165.6,
+   568.8,
+   482.4
+  ],
+  "px": [
+   870,
+   660
+  ],
+  "idx": 17
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 307,
+  "leyenda": "Foto 6.31 Discordancia angular entre las areniscas cuarzosas del Grupo Goyllarisquizga en la parte superior y las calizas del Grupo Pucará en la parte inferior. Flanco izquierdo del río Utcubamba frente a San Pablo, aguas abajo de Cocahuayco.",
+  "bbox": [
+   81.8,
+   430.9,
+   474.3,
+   460.2
+  ],
+  "pag_wh": [
+   575.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 2001,
+    "bbox": [
+     0.0,
+     0.0,
+     575.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1600,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 307,
+  "archivo_img": "56-A_p307_18.jpg",
+  "recorte": [
+   144.0,
+   165.6,
+   576.0,
+   424.8
+  ],
+  "px": [
+   898,
+   540
+  ],
+  "idx": 18
+ },
+ {
+  "boletin": "56-A",
+  "archivo": "A-056-Boletin_Bagua_Grande-Jumbilla-Lonya_Grande-Chachapoyas-Rioja.pdf",
+  "pag": 340,
+  "leyenda": "Foto 7.10.- Manto de carbón en la Florida aguas abajo de Churuja en la margen izquierda del Río Utcubambá. Cerca a la base del Grupo Goyllarisquizga.",
+  "bbox": [
+   80.7,
+   569.8,
+   487.4,
+   589.7
+  ],
+  "pag_wh": [
+   570.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 2134,
+    "bbox": [
+     0.0,
+     0.0,
+     570.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1584,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 340,
+  "archivo_img": "56-A_p340_19.jpg",
+  "recorte": [
+   100.8,
+   324.0,
+   446.4,
+   561.6
+  ],
+  "px": [
+   720,
+   495
+  ],
+  "idx": 19
+ },
+ {
+  "boletin": "59-A",
+  "archivo": "A-059-Boletin_Chimbote-19f_Casma-19g_Culebras-20g.pdf",
+  "pag": 25,
+  "leyenda": "Foto 2.3.- Dunas. Pampa Alconsillo, al Norte de la Bahía de Samanco (Chimbote). Vista al SO.",
+  "bbox": [
+   92.5,
+   693.5,
+   451.8,
+   707.3
+  ],
+  "pag_wh": [
+   583.0,
+   829.0
+  ],
+  "imagenes": [
+   {
+    "xref": 176,
+    "bbox": [
+     0.0,
+     0.0,
+     583.0,
+     829.0
+    ],
+    "frac": 1.0,
+    "w": 1620,
+    "h": 2305
+   }
+  ],
+  "unidades": [
+   "eolico"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "eolico",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 25,
+  "archivo_img": "59-A_p25_20.jpg",
+  "recorte": [
+   115.2,
+   453.6,
+   468.0,
+   691.2
+  ],
+  "px": [
+   735,
+   495
+  ],
+  "idx": 20
+ },
+ {
+  "boletin": "59-A",
+  "archivo": "A-059-Boletin_Chimbote-19f_Casma-19g_Culebras-20g.pdf",
+  "pag": 35,
+  "leyenda": "Foto 2.7.- Depósitos eólicos. Saliendo de Casma. Desde la Panamericana Norte, mirando al Oeste.",
+  "bbox": [
+   84.1,
+   488.0,
+   459.1,
+   500.4
+  ],
+  "pag_wh": [
+   577.0,
+   829.0
+  ],
+  "imagenes": [
+   {
+    "xref": 318,
+    "bbox": [
+     0.0,
+     0.0,
+     577.0,
+     829.0
+    ],
+    "frac": 1.0,
+    "w": 1604,
+    "h": 2305
+   }
+  ],
+  "unidades": [
+   "eolico"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "eolico",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 35,
+  "archivo_img": "59-A_p35_21.jpg",
+  "recorte": [
+   115.2,
+   230.4,
+   453.6,
+   482.4
+  ],
+  "px": [
+   705,
+   525
+  ],
+  "idx": 21
+ },
+ {
+  "boletin": "59-A",
+  "archivo": "A-059-Boletin_Chimbote-19f_Casma-19g_Culebras-20g.pdf",
+  "pag": 61,
+  "leyenda": "Foto 3.12.- Areniscas cuarzosas de la Fm. Farrat, en el flanco Este del cerro Media Luna, Casma.",
+  "bbox": [
+   82.1,
+   609.5,
+   444.2,
+   621.2
+  ],
+  "pag_wh": [
+   583.0,
+   822.0
+  ],
+  "imagenes": [
+   {
+    "xref": 613,
+    "bbox": [
+     0.0,
+     0.0,
+     583.0,
+     822.0
+    ],
+    "frac": 1.0,
+    "w": 1620,
+    "h": 2285
+   }
+  ],
+  "unidades": [
+   "farrat"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "farrat",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 61,
+  "archivo_img": "59-A_p61_22.jpg",
+  "recorte": [
+   79.2,
+   352.8,
+   482.4,
+   604.8
+  ],
+  "px": [
+   840,
+   525
+  ],
+  "idx": 22
+ },
+ {
+  "boletin": "59-A",
+  "archivo": "A-059-Boletin_Chimbote-19f_Casma-19g_Culebras-20g.pdf",
+  "pag": 112,
+  "leyenda": "Foto 3.25.- Dunas estabilizadas en la localidad de Samanco. Cuadrángulo de Casma.",
+  "bbox": [
+   86.0,
+   446.4,
+   406.6,
+   460.1
+  ],
+  "pag_wh": [
+   578.0,
+   826.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1644,
+    "bbox": [
+     0.0,
+     0.0,
+     578.0,
+     826.0
+    ],
+    "frac": 1.0,
+    "w": 1608,
+    "h": 2295
+   }
+  ],
+  "unidades": [
+   "eolico"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "eolico",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 112,
+  "archivo_img": "59-A_p112_23.jpg",
+  "recorte": [
+   100.8,
+   208.8,
+   460.8,
+   446.4
+  ],
+  "px": [
+   750,
+   495
+  ],
+  "idx": 23
+ },
+ {
+  "boletin": "76-A",
+  "archivo": "A-076-Boletin_Chiquián-21i.pdf",
+  "pag": 55,
+  "leyenda": "Foto N2 4.9 Discordancia angular entre areniscas de Goyllarisquizga y las calizas Pucará en el flanco izquierdo del Marañón frente a Jacas Grande.",
+  "bbox": [
+   96.8,
+   155.1,
+   114.3,
+   727.1
+  ],
+  "pag_wh": [
+   595.3,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 172,
+    "bbox": [
+     0.0,
+     0.0,
+     599.0,
+     844.8
+    ],
+    "frac": 1.01,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "goyllarisquizga"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 55,
+  "archivo_img": "76-A_p55_25.jpg",
+  "recorte": [
+   86.4,
+   93.6,
+   518.4,
+   734.4
+  ],
+  "px": [
+   1335,
+   900
+  ],
+  "idx": 25
+ },
+ {
+  "boletin": "76-A",
+  "archivo": "A-076-Boletin_Chiquián-21i.pdf",
+  "pag": 63,
+  "leyenda": "Foto N9 4.16 Formaciones Chimú, Santa y Carhuaz plegadas en la margen derecha de la quebrada Parin viendo hacia el Sur.",
+  "bbox": [
+   91.9,
+   120.7,
+   527.2,
+   145.3
+  ],
+  "pag_wh": [
+   595.3,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 200,
+    "bbox": [
+     0.0,
+     0.0,
+     599.0,
+     844.8
+    ],
+    "frac": 1.01,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "chimu"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "chimu",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 63,
+  "archivo_img": "76-A_p63_26.jpg",
+  "recorte": [
+   64.8,
+   93.6,
+   511.2,
+   734.4
+  ],
+  "px": [
+   930,
+   1335
+  ],
+  "idx": 26
+ },
+ {
+  "boletin": "78-A",
+  "archivo": "A-078-Boletin_Chuchurras-La_Merced-Oxapampa-Ulcumayo.pdf",
+  "pag": 90,
+  "leyenda": "Foto N2 4.18 Afloramiento de areniscas cuarzosas de la Formación Vivian Foto N2 4.19 en la Oda. Cerveza (río Cacazú-Oxapampa). Secuencia continental del Grupo Huayllabamba que aflora",
+  "bbox": [
+   474.0,
+   126.5,
+   502.3,
+   721.0
+  ],
+  "pag_wh": [
+   595.3,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 262,
+    "bbox": [
+     0.0,
+     0.0,
+     599.0,
+     844.8
+    ],
+    "frac": 1.01,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 90,
+  "archivo_img": "78-A_p90_27.jpg",
+  "recorte": [
+   72.0,
+   100.8,
+   475.2,
+   748.8
+  ],
+  "px": [
+   840,
+   1350
+  ],
+  "idx": 27
+ },
+ {
+  "boletin": "81-A",
+  "archivo": "A-081-Boletin_Puerto_Luz-Colorado-Laberinto-Puerto_Maldonado-Quincemil...pdf",
+  "pag": 54,
+  "leyenda": "Foto N•12. Vista del sinclinal en secuencia cretácica (Fms. VIVian y Chonta). Localidad: Cuesta Blanca, margen izquierda del río lnambari.",
+  "bbox": [
+   60.0,
+   392.8,
+   496.6,
+   417.6
+  ],
+  "pag_wh": [
+   566.9,
+   819.0
+  ],
+  "imagenes": [
+   {
+    "xref": 167,
+    "bbox": [
+     -19.8,
+     -5.7,
+     574.9,
+     836.0
+    ],
+    "frac": 1.078,
+    "w": 826,
+    "h": 1169
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 54,
+  "archivo_img": "81-A_p54_28.jpg",
+  "recorte": [
+   64.8,
+   93.6,
+   504.0,
+   388.8
+  ],
+  "px": [
+   915,
+   615
+  ],
+  "idx": 28
+ },
+ {
+  "boletin": "92-A",
+  "archivo": "A-092-Boletin_Dos_de_Mayo-13m_Orellana_14m.pdf",
+  "pag": 84,
+  "leyenda": "Foto N• 24: Secuencias pelitlcas de la Formactón de Agua Caliente en el rio SarayaqUIIIo, ocrca al nücleo del anttclinal d.e Ventanillf.ls, mostrando un plegamiento de doble charnela.",
+  "bbox": [
+   405.6,
+   106.5,
+   428.8,
+   715.7
+  ],
+  "pag_wh": [
+   566.9,
+   821.8
+  ],
+  "imagenes": [
+   {
+    "xref": 366,
+    "bbox": [
+     8.1,
+     -5.7,
+     568.9,
+     787.8
+    ],
+    "frac": 0.955,
+    "w": 779,
+    "h": 1102
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 84,
+  "archivo_img": "92-A_p84_29.jpg",
+  "recorte": [
+   151.2,
+   93.6,
+   518.4,
+   727.2
+  ],
+  "px": [
+   1320,
+   765
+  ],
+  "idx": 29
+ },
+ {
+  "boletin": "92-A",
+  "archivo": "A-092-Boletin_Dos_de_Mayo-13m_Orellana_14m.pdf",
+  "pag": 104,
+  "leyenda": "Foto N• 28: AHoramiento do aguas termales en areniscas de la Rlrmación Agua Caliente. en el río",
+  "bbox": [
+   90.2,
+   383.7,
+   516.4,
+   397.8
+  ],
+  "pag_wh": [
+   566.9,
+   821.8
+  ],
+  "imagenes": [
+   {
+    "xref": 460,
+    "bbox": [
+     8.1,
+     -5.7,
+     568.9,
+     787.8
+    ],
+    "frac": 0.955,
+    "w": 779,
+    "h": 1102
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 104,
+  "archivo_img": "92-A_p104_30.jpg",
+  "recorte": [
+   86.4,
+   86.4,
+   518.4,
+   381.6
+  ],
+  "px": [
+   900,
+   615
+  ],
+  "idx": 30
+ },
+ {
+  "boletin": "92-A",
+  "archivo": "A-092-Boletin_Dos_de_Mayo-13m_Orellana_14m.pdf",
+  "pag": 136,
+  "leyenda": "Foto N• 7: Aumento 150X, Arenisca cuarzosa, compuesta por abundantes granos de cuarzo (cz), de formas subredondeadas y escasamente subangutosas. Los granos pre- sentan un acomodo tan cerrado que casi no permite material cementante como rel- leno intersticial. (Formación Vivian).",
+  "bbox": [
+   107.5,
+   358.9,
+   496.2,
+   404.2
+  ],
+  "pag_wh": [
+   566.9,
+   821.8
+  ],
+  "imagenes": [
+   {
+    "xref": 590,
+    "bbox": [
+     8.1,
+     -5.7,
+     568.9,
+     787.8
+    ],
+    "frac": 0.955,
+    "w": 779,
+    "h": 1102
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": true,
+  "pag_foto": 136,
+  "archivo_img": "92-A_p136_36.jpg",
+  "recorte": [
+   108.0,
+   93.6,
+   496.8,
+   360.0
+  ],
+  "px": [
+   810,
+   555
+  ],
+  "idx": 36
+ },
+ {
+  "boletin": "92-A",
+  "archivo": "A-092-Boletin_Dos_de_Mayo-13m_Orellana_14m.pdf",
+  "pag": 138,
+  "leyenda": "Foto N2 9: Aumento 150X. Arenisca feldespática. compuesta por abundantes granos de cuarzo (cz) y plagioclasas (PGLs), con formas subredondeadas y escasamente subangulosas. Las plagioclasas son relativamente abundantes. El material cernen· tante consiste an arcillas (ARCs) con sericita (ser). Trazas de minerales opacos (Ops). (Formación Agua Caliente).",
+  "bbox": [
+   118.4,
+   367.5,
+   508.3,
+   422.9
+  ],
+  "pag_wh": [
+   566.9,
+   821.8
+  ],
+  "imagenes": [
+   {
+    "xref": 596,
+    "bbox": [
+     8.1,
+     -5.7,
+     568.9,
+     787.8
+    ],
+    "frac": 0.955,
+    "w": 779,
+    "h": 1102
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": true,
+  "pag_foto": 138,
+  "archivo_img": "92-A_p138_37.jpg",
+  "recorte": [
+   93.6,
+   86.4,
+   532.8,
+   367.2
+  ],
+  "px": [
+   915,
+   585
+  ],
+  "idx": 37
+ },
+ {
+  "boletin": "93-A",
+  "archivo": "A-093-Boletin_Nuevo_Edén-17l_Bolivar-17m.pdf",
+  "pag": 92,
+  "leyenda": "Foto Nº 26. Zona de límite entre las secuencias terminales de la Fm. Chonta y las facies regresivas fluvio-deltaicas de la Fm. Vivían. Margen izquierda, ca- ñón Nucane. Vista al Norte.",
+  "bbox": [
+   317.7,
+   652.1,
+   518.0,
+   714.3
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 295,
+    "bbox": [
+     -0.1,
+     -0.4,
+     595.1,
+     842.4
+    ],
+    "frac": 1.001,
+    "w": 1240,
+    "h": 1756
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 92,
+  "archivo_img": "93-A_p92_40.jpg",
+  "recorte": [
+   79.2,
+   432.0,
+   316.8,
+   734.4
+  ],
+  "px": [
+   495,
+   630
+  ],
+  "idx": 40
+ },
+ {
+  "boletin": "94-A",
+  "archivo": "A-094-Boletin_Tarapoto-Papa_Playa-Utcurarca-Yanayacu.pdf",
+  "pag": 76,
+  "leyenda": "Foto N• 13. Contacto concordante de la Fm. Cushabatay sobre la Fm. SaJayaquillo en el camioo de Santa Elena a Bello Horizonte. Vista al Sur-Sureste.",
+  "bbox": [
+   65.8,
+   681.9,
+   512.3,
+   706.5
+  ],
+  "pag_wh": [
+   564.0,
+   804.8
+  ],
+  "imagenes": [
+   {
+    "xref": 393,
+    "bbox": [
+     -9.1,
+     -5.7,
+     574.8,
+     836.0
+    ],
+    "frac": 1.083,
+    "w": 811,
+    "h": 1169
+   }
+  ],
+  "unidades": [
+   "cushabatay"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "cushabatay",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 76,
+  "archivo_img": "94-A_p76_43.jpg",
+  "recorte": [
+   72.0,
+   410.4,
+   504.0,
+   684.0
+  ],
+  "px": [
+   900,
+   570
+  ],
+  "idx": 42
+ },
+ {
+  "boletin": "94-A",
+  "archivo": "A-094-Boletin_Tarapoto-Papa_Playa-Utcurarca-Yanayacu.pdf",
+  "pag": 76,
+  "leyenda": "Foto Nº 12. El(f)osición de areniscas cuarzosas de la Formación Cushabatay en el Pongo de Agulrre, margen dere-",
+  "bbox": [
+   66.5,
+   378.3,
+   509.0,
+   392.6
+  ],
+  "pag_wh": [
+   564.0,
+   804.8
+  ],
+  "imagenes": [
+   {
+    "xref": 393,
+    "bbox": [
+     -9.1,
+     -5.7,
+     574.8,
+     836.0
+    ],
+    "frac": 1.083,
+    "w": 811,
+    "h": 1169
+   }
+  ],
+  "unidades": [
+   "cushabatay"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "cushabatay",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 76,
+  "archivo_img": "94-A_p76_42.jpg",
+  "recorte": [
+   72.0,
+   122.4,
+   504.0,
+   374.4
+  ],
+  "px": [
+   900,
+   525
+  ],
+  "idx": 43
+ },
+ {
+  "boletin": "94-A",
+  "archivo": "A-094-Boletin_Tarapoto-Papa_Playa-Utcurarca-Yanayacu.pdf",
+  "pag": 99,
+  "leyenda": "Foto N• 18. Areniscas cuarzosas blancas de la Formación Vivian con e~tratificación sesgada expuestas cerca a Bello HOfizonte, al Sureste de Tarapoto.",
+  "bbox": [
+   338.1,
+   96.1,
+   504.7,
+   157.8
+  ],
+  "pag_wh": [
+   564.0,
+   804.8
+  ],
+  "imagenes": [
+   {
+    "xref": 520,
+    "bbox": [
+     -9.1,
+     -5.7,
+     574.8,
+     836.0
+    ],
+    "frac": 1.083,
+    "w": 811,
+    "h": 1169
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 99,
+  "archivo_img": "94-A_p99_44.jpg",
+  "recorte": [
+   64.8,
+   86.4,
+   511.2,
+   705.6
+  ],
+  "px": [
+   930,
+   1290
+  ],
+  "idx": 44
+ },
+ {
+  "boletin": "96-A",
+  "archivo": "A-096-Boletin_Sungaro-13n_Capanahua-14n.pdf",
+  "pag": 50,
+  "leyenda": "Foto N2 12 Vista de la margen derecha del río Maquía; secuencia de transición entre las formaciones Chonta y Vivian constituída de la base al tope por capas delgadas de areniscas muy finas limolíticas con estratificación ondulante de 0.15 m y finalmente areniscas cuarzosas de gra- no medio en capas de 0.20 m de grosor.",
+  "bbox": [
+   70.6,
+   661.2,
+   512.0,
+   707.6
+  ],
+  "pag_wh": [
+   571.0,
+   813.0
+  ],
+  "imagenes": [
+   {
+    "xref": 215,
+    "bbox": [
+     0.0,
+     0.0,
+     571.0,
+     813.0
+    ],
+    "frac": 1.0,
+    "w": 1588,
+    "h": 2260
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 50,
+  "archivo_img": "96-A_p50_46.jpg",
+  "recorte": [
+   64.8,
+   403.2,
+   511.2,
+   662.4
+  ],
+  "px": [
+   930,
+   540
+  ],
+  "idx": 46
+ },
+ {
+  "boletin": "96-A",
+  "archivo": "A-096-Boletin_Sungaro-13n_Capanahua-14n.pdf",
+  "pag": 52,
+  "leyenda": "Foto N2 13 Areniscas Chonta-Vivian: Se puede apreciar abundantes granos de cuarzo (cz) de formas",
+  "bbox": [
+   72.4,
+   369.9,
+   515.9,
+   382.9
+  ],
+  "pag_wh": [
+   566.9,
+   813.3
+  ],
+  "imagenes": [
+   {
+    "xref": 221,
+    "bbox": [
+     -8.9,
+     -5.7,
+     575.5,
+     815.1
+    ],
+    "frac": 1.04,
+    "w": 1623,
+    "h": 2280
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": true,
+  "pag_foto": 52,
+  "archivo_img": "96-A_p52_47.jpg",
+  "recorte": [
+   64.8,
+   79.2,
+   518.4,
+   367.2
+  ],
+  "px": [
+   945,
+   600
+  ],
+  "idx": 47
+ },
+ {
+  "boletin": "96-A",
+  "archivo": "A-096-Boletin_Sungaro-13n_Capanahua-14n.pdf",
+  "pag": 52,
+  "leyenda": "Foto N2 14 Areniscas Vivian: Se puede apreciar abundantes granos de cuarzo (cz), de formas",
+  "bbox": [
+   70.3,
+   681.1,
+   514.7,
+   693.9
+  ],
+  "pag_wh": [
+   566.9,
+   813.3
+  ],
+  "imagenes": [
+   {
+    "xref": 221,
+    "bbox": [
+     -8.9,
+     -5.7,
+     575.5,
+     815.1
+    ],
+    "frac": 1.04,
+    "w": 1623,
+    "h": 2280
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": true,
+  "pag_foto": 52,
+  "archivo_img": "96-A_p52_48.jpg",
+  "recorte": [
+   64.8,
+   410.4,
+   518.4,
+   676.8
+  ],
+  "px": [
+   945,
+   555
+  ],
+  "idx": 48
+ },
+ {
+  "boletin": "96-A",
+  "archivo": "A-096-Boletin_Sungaro-13n_Capanahua-14n.pdf",
+  "pag": 56,
+  "leyenda": "Foto N2 15 Fm. Vivian: observada en la margen izquierda",
+  "bbox": [
+   449.0,
+   428.0,
+   463.3,
+   690.5
+  ],
+  "pag_wh": [
+   571.0,
+   813.0
+  ],
+  "imagenes": [
+   {
+    "xref": 240,
+    "bbox": [
+     0.0,
+     0.0,
+     571.0,
+     813.0
+    ],
+    "frac": 1.0,
+    "w": 1588,
+    "h": 2260
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 56,
+  "archivo_img": "96-A_p56_49.jpg",
+  "recorte": [
+   64.8,
+   424.8,
+   453.6,
+   720.0
+  ],
+  "px": [
+   810,
+   615
+  ],
+  "idx": 49
+ },
+ {
+  "boletin": "88-A",
+  "archivo": "A088-Boletin_Codo_del_Pozo-20m_Rio_Palcazu-20n.pdf",
+  "pag": 52,
+  "leyenda": "Foto Nº 4.14. Cuadrángulo de Río Palcazu - Punto de muestreo N9 04 de la sección estratigráfica medida en el río Apurucayali (Figura N2 07). Parte media de la Formación Vivian. Obsérvese un horizonte de arenisca blanca cuarcítica caractenstico de esta formación.",
+  "bbox": [
+   69.2,
+   379.5,
+   509.9,
+   414.5
+  ],
+  "pag_wh": [
+   570.7,
+   827.5
+  ],
+  "imagenes": [
+   {
+    "xref": 1354,
+    "bbox": [
+     -14.7,
+     0.0,
+     584.3,
+     844.8
+    ],
+    "frac": 1.072,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 52,
+  "archivo_img": "88-A_p52_51.jpg",
+  "recorte": [
+   72.0,
+   108.0,
+   504.0,
+   381.6
+  ],
+  "px": [
+   900,
+   570
+  ],
+  "idx": 51
+ },
+ {
+  "boletin": "97-A",
+  "archivo": "A097-Boletin_Rio_Biabo-Manco_Capac-Vencedor.pdf",
+  "pag": 68,
+  "leyenda": "Foto Nº 4.8 Secuencia del Grupo Oriente, lado oriental del anticlinal de Manashahuemaná; se observa la morfología menos resistente que presenta la Formación Esperanza con respecto a las unidades adyacentes. Vista hacia el Sur.",
+  "bbox": [
+   65.6,
+   690.0,
+   511.2,
+   715.9
+  ],
+  "pag_wh": [
+   574.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 426,
+    "bbox": [
+     0.0,
+     0.0,
+     574.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1595,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "oriente"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "oriente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 68,
+  "archivo_img": "97-A_p68_53.jpg",
+  "recorte": [
+   72.0,
+   417.6,
+   504.0,
+   727.2
+  ],
+  "px": [
+   900,
+   645
+  ],
+  "idx": 52
+ },
+ {
+  "boletin": "97-A",
+  "archivo": "A097-Boletin_Rio_Biabo-Manco_Capac-Vencedor.pdf",
+  "pag": 68,
+  "leyenda": "Foto Nº 4. 7. Formación Cushabatay, constituida por areniscas claras resistentes, en el sector SO de la hoja de Manco Cápac.",
+  "bbox": [
+   66.0,
+   381.8,
+   512.1,
+   405.8
+  ],
+  "pag_wh": [
+   574.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 426,
+    "bbox": [
+     0.0,
+     0.0,
+     574.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1595,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "cushabatay"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "cushabatay",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 68,
+  "archivo_img": "97-A_p68_52.jpg",
+  "recorte": [
+   64.8,
+   93.6,
+   504.0,
+   381.6
+  ],
+  "px": [
+   915,
+   600
+  ],
+  "idx": 53
+ },
+ {
+  "boletin": "97-A",
+  "archivo": "A097-Boletin_Rio_Biabo-Manco_Capac-Vencedor.pdf",
+  "pag": 72,
+  "leyenda": "Foto N2 4.1 O Formación Vivian; se observan las resistentes capas formando escar· pas. Vista hacia el Este, flanco Sur del sinclinal del Pauya.",
+  "bbox": [
+   311.3,
+   667.0,
+   512.5,
+   717.4
+  ],
+  "pag_wh": [
+   574.0,
+   817.0
+  ],
+  "imagenes": [
+   {
+    "xref": 445,
+    "bbox": [
+     0.0,
+     0.0,
+     574.0,
+     817.0
+    ],
+    "frac": 1.0,
+    "w": 1595,
+    "h": 2270
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 72,
+  "archivo_img": "97-A_p72_54.jpg",
+  "recorte": [
+   64.8,
+   446.4,
+   309.6,
+   720.0
+  ],
+  "px": [
+   510,
+   570
+  ],
+  "idx": 54
+ },
+ {
+  "boletin": "97-A",
+  "archivo": "A097-Boletin_Rio_Biabo-Manco_Capac-Vencedor.pdf",
+  "pag": 82,
+  "leyenda": "Foto Nº 4.15. Vista de las formaciones Vivian y Yahuarango, en aparente concordancia, conformando el sinclinal de Pauya al Sur de la hoja de Manco Cápac.",
+  "bbox": [
+   69.6,
+   382.1,
+   513.9,
+   406.9
+  ],
+  "pag_wh": [
+   568.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 489,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 82,
+  "archivo_img": "97-A_p82_55.jpg",
+  "recorte": [
+   79.2,
+   86.4,
+   511.2,
+   698.4
+  ],
+  "px": [
+   900,
+   1275
+  ],
+  "idx": 55
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 55,
+  "leyenda": "Foto Nº 9. Afloramiento de areniscas de la For- mación Cushabatay (Qda. Agua Ca- liente).",
+  "bbox": [
+   378.0,
+   365.3,
+   515.8,
+   415.0
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 170,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "cushabatay"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "cushabatay",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 55,
+  "archivo_img": "101-A_p55_56.jpg",
+  "recorte": [
+   64.8,
+   93.6,
+   518.4,
+   734.4
+  ],
+  "px": [
+   945,
+   1335
+  ],
+  "idx": 56
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 61,
+  "leyenda": "Foto Nº 12. Vista de un afloramiento de la Formación Raya (Qda. Agua Caliente).",
+  "bbox": [
+   72.7,
+   398.9,
+   396.8,
+   413.7
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 189,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 61,
+  "archivo_img": "101-A_p61_57.jpg",
+  "recorte": [
+   72.0,
+   86.4,
+   518.4,
+   734.4
+  ],
+  "px": [
+   930,
+   1350
+  ],
+  "idx": 57
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 63,
+  "leyenda": "Foto N12 15. Areniscas y lutitas interestra- tificadas de la Formación Raya (Qda. Agua Caliente).",
+  "bbox": [
+   416.6,
+   393.6,
+   519.6,
+   443.6
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 195,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 63,
+  "archivo_img": "101-A_p63_59.jpg",
+  "recorte": [
+   72.0,
+   108.0,
+   518.4,
+   734.4
+  ],
+  "px": [
+   930,
+   1305
+  ],
+  "idx": 58
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 67,
+  "leyenda": "Foto Nº 15b. Vista de una arenisca microconglo- merádica con pátinas de oxidación, observada en la Qda. Agua Caliente (Formación Agua Caliente).",
+  "bbox": [
+   380.9,
+   370.2,
+   522.6,
+   432.0
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 207,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 67,
+  "archivo_img": "101-A_p67_60.jpg",
+  "recorte": [
+   72.0,
+   93.6,
+   518.4,
+   734.4
+  ],
+  "px": [
+   930,
+   1335
+  ],
+  "idx": 59
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 69,
+  "leyenda": "Foto N2 16. Nódulos de arenisca ferruginosa en la Formación Agua Caliente (Qda. Agua Caliente).",
+  "bbox": [
+   372.3,
+   361.9,
+   516.4,
+   411.6
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 213,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 69,
+  "archivo_img": "101-A_p69_62.jpg",
+  "recorte": [
+   64.8,
+   86.4,
+   511.2,
+   727.2
+  ],
+  "px": [
+   930,
+   1335
+  ],
+  "idx": 60
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 71,
+  "leyenda": "Foto N2 17b. Areniscas y conglomerados de la Fm. Agua Caliente (Oda. Agua Fría).",
+  "bbox": [
+   316.8,
+   104.7,
+   518.2,
+   132.0
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 219,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 71,
+  "archivo_img": "101-A_p71_63.jpg",
+  "recorte": [
+   64.8,
+   93.6,
+   511.2,
+   734.4
+  ],
+  "px": [
+   930,
+   1335
+  ],
+  "idx": 61
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 73,
+  "leyenda": "Foto N2 19. Marcas de oleaje en las areniscas de la Formación Agua Caliente (Qda. Agua Fría).",
+  "bbox": [
+   70.3,
+   388.3,
+   447.1,
+   402.3
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 226,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 73,
+  "archivo_img": "101-A_p73_65.jpg",
+  "recorte": [
+   72.0,
+   93.6,
+   511.2,
+   734.4
+  ],
+  "px": [
+   915,
+   1335
+  ],
+  "idx": 62
+ },
+ {
+  "boletin": "101-A",
+  "archivo": "A101-Boletin_Puerto_Oriente-Ana_Maria-Rio_Tapiche.pdf",
+  "pag": 89,
+  "leyenda": "Foto N2 26. Estratos de areniscas con niveles pelíticos de la Formación lpururo lp1 (próximo al Km 14 de la carretera al balneario Agua Caliente).",
+  "bbox": [
+   314.2,
+   105.1,
+   516.6,
+   155.6
+  ],
+  "pag_wh": [
+   576.0,
+   823.5
+  ],
+  "imagenes": [
+   {
+    "xref": 275,
+    "bbox": [
+     -11.0,
+     0.0,
+     588.0,
+     844.8
+    ],
+    "frac": 1.067,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 89,
+  "archivo_img": "101-A_p89_69.jpg",
+  "recorte": [
+   64.8,
+   93.6,
+   511.2,
+   734.4
+  ],
+  "px": [
+   930,
+   1335
+  ],
+  "idx": 64
+ },
+ {
+  "boletin": "103-A",
+  "archivo": "A103-Boletin_Balsapuerto-Yurimaguas.pdf",
+  "pag": 36,
+  "leyenda": "Foto N2 3.3.- Valle cañón configurado en las areniscas de la Formación Vivian, cerca al fundo Julca en el cuadrángulo de Balsapuerto.",
+  "bbox": [
+   463.8,
+   172.2,
+   477.9,
+   711.5
+  ],
+  "pag_wh": [
+   564.0,
+   813.0
+  ],
+  "imagenes": [
+   {
+    "xref": 5724,
+    "bbox": [
+     0.0,
+     0.0,
+     564.0,
+     813.0
+    ],
+    "frac": 1.0,
+    "w": 1568,
+    "h": 2260
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 36,
+  "archivo_img": "103-A_p36_70.jpg",
+  "recorte": [
+   72.0,
+   72.0,
+   460.8,
+   741.6
+  ],
+  "px": [
+   810,
+   1395
+  ],
+  "idx": 65
+ },
+ {
+  "boletin": "103-A",
+  "archivo": "A103-Boletin_Balsapuerto-Yurimaguas.pdf",
+  "pag": 50,
+  "leyenda": "Foto N2 4.2.- Araniscas de la Formación Cushabatay al fondo configurando las partes más elevadas de la montaña Cahuapanas. Cuadrángulo de Balsapuerto.",
+  "bbox": [
+   77.6,
+   374.4,
+   326.7,
+   413.8
+  ],
+  "pag_wh": [
+   566.0,
+   813.0
+  ],
+  "imagenes": [
+   {
+    "xref": 5650,
+    "bbox": [
+     0.0,
+     0.0,
+     566.0,
+     813.0
+    ],
+    "frac": 1.0,
+    "w": 1575,
+    "h": 2260
+   }
+  ],
+  "unidades": [
+   "cushabatay"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "cushabatay",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 50,
+  "archivo_img": "103-A_p50_71.jpg",
+  "recorte": [
+   72.0,
+   79.2,
+   511.2,
+   367.2
+  ],
+  "px": [
+   915,
+   600
+  ],
+  "idx": 66
+ },
+ {
+  "boletin": "103-A",
+  "archivo": "A103-Boletin_Balsapuerto-Yurimaguas.pdf",
+  "pag": 56,
+  "leyenda": "Foto N• 4.6.· Afloramiento (je las areniscas de la Formación Agua Caliente en la quebrada Pumayacu.",
+  "bbox": [
+   81.7,
+   693.9,
+   494.7,
+   706.1
+  ],
+  "pag_wh": [
+   564.0,
+   802.0
+  ],
+  "imagenes": [
+   {
+    "xref": 5503,
+    "bbox": [
+     0.9,
+     -5.7,
+     564.7,
+     802.2
+    ],
+    "frac": 1.007,
+    "w": 783,
+    "h": 1122
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 56,
+  "archivo_img": "103-A_p56_73.jpg",
+  "recorte": [
+   79.2,
+   424.8,
+   518.4,
+   691.2
+  ],
+  "px": [
+   915,
+   555
+  ],
+  "idx": 67
+ },
+ {
+  "boletin": "103-A",
+  "archivo": "A103-Boletin_Balsapuerto-Yurimaguas.pdf",
+  "pag": 56,
+  "leyenda": "Foto N• 4.5.- Nivel&s limoarcillíticos y areniscosos de la Formación Agua Caliente en la quebrada",
+  "bbox": [
+   81.7,
+   375.1,
+   475.0,
+   388.0
+  ],
+  "pag_wh": [
+   564.0,
+   802.0
+  ],
+  "imagenes": [
+   {
+    "xref": 5503,
+    "bbox": [
+     0.9,
+     -5.7,
+     564.7,
+     802.2
+    ],
+    "frac": 1.007,
+    "w": 783,
+    "h": 1122
+   }
+  ],
+  "unidades": [
+   "agua_caliente"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "agua_caliente",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 56,
+  "archivo_img": "103-A_p56_72.jpg",
+  "recorte": [
+   79.2,
+   86.4,
+   511.2,
+   367.2
+  ],
+  "px": [
+   900,
+   585
+  ],
+  "idx": 68
+ },
+ {
+  "boletin": "103-A",
+  "archivo": "A103-Boletin_Balsapuerto-Yurimaguas.pdf",
+  "pag": 60,
+  "leyenda": "Foto Nº 4.7.· Contacto entre la Formación Chonta que infrayace a las areniscas de la Formación Vivian,",
+  "bbox": [
+   75.5,
+   369.4,
+   494.7,
+   383.1
+  ],
+  "pag_wh": [
+   568.0,
+   813.0
+  ],
+  "imagenes": [
+   {
+    "xref": 5483,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     813.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2260
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 60,
+  "archivo_img": "103-A_p60_74.jpg",
+  "recorte": [
+   72.0,
+   165.6,
+   504.0,
+   367.2
+  ],
+  "px": [
+   900,
+   420
+  ],
+  "idx": 69
+ },
+ {
+  "boletin": "103-A",
+  "archivo": "A103-Boletin_Balsapuerto-Yurimaguas.pdf",
+  "pag": 66,
+  "leyenda": "Foto N2 4.8-A.- Afloramiento de estratos gruesos de areniscas de la Formación Vivían cerca al casen o",
+  "bbox": [
+   75.4,
+   374.8,
+   491.1,
+   387.8
+  ],
+  "pag_wh": [
+   568.0,
+   815.0
+  ],
+  "imagenes": [
+   {
+    "xref": 5333,
+    "bbox": [
+     0.0,
+     0.0,
+     568.0,
+     815.0
+    ],
+    "frac": 1.0,
+    "w": 1580,
+    "h": 2265
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 66,
+  "archivo_img": "103-A_p66_75.jpg",
+  "recorte": [
+   72.0,
+   100.8,
+   504.0,
+   374.4
+  ],
+  "px": [
+   900,
+   570
+  ],
+  "idx": 70
+ },
+ {
+  "boletin": "112-A",
+  "archivo": "A112-Boletin_Aucayacu-Rio_Santa_Ana....pdf",
+  "pag": 38,
+  "leyenda": "Foto Nº 1 Encañonamiento del río Aucayacu en calizas c_retáceas, este afluente ha sec- cionado longitudinalmente produciendo profundos cañones de paredes verticales. Alrededores de La Colpa. Este de Aucayacu.",
+  "bbox": [
+   85.3,
+   666.3,
+   502.9,
+   705.5
+  ],
+  "pag_wh": [
+   564.0,
+   818.0
+  ],
+  "imagenes": [
+   {
+    "xref": 180,
+    "bbox": [
+     0.0,
+     0.0,
+     564.0,
+     818.0
+    ],
+    "frac": 1.0,
+    "w": 1568,
+    "h": 2275
+   }
+  ],
+  "unidades": [],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 38,
+  "archivo_img": "112-A_p38_76.jpg",
+  "recorte": [
+   79.2,
+   93.6,
+   504.0,
+   662.4
+  ],
+  "px": [
+   885,
+   1185
+  ],
+  "idx": 71
+ },
+ {
+  "boletin": "112-A",
+  "archivo": "A112-Boletin_Aucayacu-Rio_Santa_Ana....pdf",
+  "pag": 74,
+  "leyenda": "Foto N2 24 Formación Aramachay, sus niveles segregan aguas car- bonatadas (sodio y calcio) producto de la descomposición de los niveles carbonáticos. Camino Aucayacu - La Colpa.",
+  "bbox": [
+   135.0,
+   655.7,
+   452.2,
+   691.1
+  ],
+  "pag_wh": [
+   564.0,
+   820.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1047,
+    "bbox": [
+     0.0,
+     0.0,
+     564.0,
+     820.0
+    ],
+    "frac": 1.0,
+    "w": 1568,
+    "h": 2280
+   }
+  ],
+  "unidades": [],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 74,
+  "archivo_img": "112-A_p74_77.jpg",
+  "recorte": [
+   129.6,
+   403.2,
+   453.6,
+   655.2
+  ],
+  "px": [
+   675,
+   525
+  ],
+  "idx": 72
+ },
+ {
+  "boletin": "112-A",
+  "archivo": "A112-Boletin_Aucayacu-Rio_Santa_Ana....pdf",
+  "pag": 84,
+  "leyenda": "Foto N2 25 Areniscas cuarzosas",
+  "bbox": [
+   347.8,
+   446.7,
+   512.7,
+   461.6
+  ],
+  "pag_wh": [
+   563.0,
+   818.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1091,
+    "bbox": [
+     0.0,
+     0.0,
+     563.0,
+     818.0
+    ],
+    "frac": 1.0,
+    "w": 1564,
+    "h": 2275
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "cushabatay",
+  "origen": "seccion",
+  "micro": false,
+  "pag_foto": 84,
+  "archivo_img": "112-A_p84_78.jpg",
+  "recorte": [
+   72.0,
+   108.0,
+   338.4,
+   734.4
+  ],
+  "px": [
+   555,
+   1305
+  ],
+  "idx": 73
+ },
+ {
+  "boletin": "112-A",
+  "archivo": "A112-Boletin_Aucayacu-Rio_Santa_Ana....pdf",
+  "pag": 96,
+  "leyenda": "Foto N2 34 Contacto entre las formaciones Chonta (derecha) y Vivian (izquierda), el contacto es concordante. Carretera Tingo María - Supte.",
+  "bbox": [
+   82.0,
+   384.3,
+   501.1,
+   411.1
+  ],
+  "pag_wh": [
+   564.0,
+   826.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1261,
+    "bbox": [
+     0.0,
+     0.0,
+     564.0,
+     826.0
+    ],
+    "frac": 1.0,
+    "w": 1568,
+    "h": 2295
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": false,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 96,
+  "archivo_img": "112-A_p96_80.jpg",
+  "recorte": [
+   72.0,
+   108.0,
+   504.0,
+   381.6
+  ],
+  "px": [
+   900,
+   570
+  ],
+  "idx": 75
+ },
+ {
+  "boletin": "112-A",
+  "archivo": "A112-Boletin_Aucayacu-Rio_Santa_Ana....pdf",
+  "pag": 96,
+  "leyenda": "Foto N2 35 Formación Vivian, estratos de areniscas claras y grano medio, carretera Previsto -",
+  "bbox": [
+   79.0,
+   680.6,
+   494.6,
+   699.4
+  ],
+  "pag_wh": [
+   564.0,
+   826.0
+  ],
+  "imagenes": [
+   {
+    "xref": 1261,
+    "bbox": [
+     0.0,
+     0.0,
+     564.0,
+     826.0
+    ],
+    "frac": 1.0,
+    "w": 1568,
+    "h": 2295
+   }
+  ],
+  "unidades": [
+   "vivian"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "vivian",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 96,
+  "archivo_img": "112-A_p96_81.jpg",
+  "recorte": [
+   72.0,
+   417.6,
+   504.0,
+   676.8
+  ],
+  "px": [
+   900,
+   540
+  ],
+  "idx": 76
+ },
+ {
+  "boletin": "30-B",
+  "archivo": "B-030-Boletin-Estudio_geologico_economico_de_rocas_y_minerales.pdf",
+  "pag": 145,
+  "leyenda": "Foto 75. Afloramiento de areniscas, que en superficie se presentan moderadamente fracturadas.",
+  "bbox": [
+   103.4,
+   402.7,
+   406.4,
+   413.1
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 507,
+    "bbox": [
+     104.9,
+     447.9,
+     479.0,
+     728.7
+    ],
+    "frac": 0.21,
+    "w": 992,
+    "h": 744
+   },
+   {
+    "xref": 508,
+    "bbox": [
+     103.6,
+     113.4,
+     477.6,
+     394.2
+    ],
+    "frac": 0.21,
+    "w": 1102,
+    "h": 827
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "huancane",
+  "origen": "seccion",
+  "micro": false,
+  "pag_foto": 145,
+  "archivo_img": "30-B_p145_87.jpg",
+  "recorte": [
+   100.8,
+   108.0,
+   482.4,
+   396.0
+  ],
+  "px": [
+   795,
+   600
+  ],
+  "idx": 79
+ },
+ {
+  "boletin": "30-B",
+  "archivo": "B-030-Boletin-Estudio_geologico_economico_de_rocas_y_minerales.pdf",
+  "pag": 150,
+  "leyenda": "Foto 80. Afloramientos de pizarra a lo largo de la carretera Sandia (San Juan del Oro).",
+  "bbox": [
+   113.2,
+   400.7,
+   385.5,
+   411.1
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 526,
+    "bbox": [
+     111.9,
+     113.4,
+     486.0,
+     394.2
+    ],
+    "frac": 0.21,
+    "w": 1102,
+    "h": 827
+   }
+  ],
+  "unidades": [
+   "m_sandia"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "m_sandia",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 150,
+  "archivo_img": "30-B_p150_91.jpg",
+  "recorte": [
+   108.0,
+   108.0,
+   489.6,
+   396.0
+  ],
+  "px": [
+   795,
+   600
+  ],
+  "idx": 84
+ },
+ {
+  "boletin": "30-B",
+  "archivo": "B-030-Boletin-Estudio_geologico_economico_de_rocas_y_minerales.pdf",
+  "pag": 151,
+  "leyenda": "Foto 81.Afloramientos de pizarra a lo largo de la carretera Sandia (San Juan del Oro).",
+  "bbox": [
+   110.0,
+   406.2,
+   378.5,
+   416.6
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 530,
+    "bbox": [
+     111.0,
+     119.8,
+     485.2,
+     400.6
+    ],
+    "frac": 0.21,
+    "w": 1102,
+    "h": 827
+   }
+  ],
+  "unidades": [
+   "m_sandia"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "m_sandia",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 151,
+  "archivo_img": "30-B_p151_92.jpg",
+  "recorte": [
+   108.0,
+   115.2,
+   489.6,
+   403.2
+  ],
+  "px": [
+   795,
+   600
+  ],
+  "idx": 85
+ },
+ {
+  "boletin": "30-B",
+  "archivo": "B-030-Boletin-Estudio_geologico_economico_de_rocas_y_minerales.pdf",
+  "pag": 170,
+  "leyenda": "Foto 105. Ocurrencias de sal en areniscas de la Formación Huancané.",
+  "bbox": [
+   113.5,
+   744.9,
+   342.3,
+   755.3
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 609,
+    "bbox": [
+     114.1,
+     116.7,
+     486.0,
+     395.6
+    ],
+    "frac": 0.207,
+    "w": 1063,
+    "h": 797
+   },
+   {
+    "xref": 610,
+    "bbox": [
+     114.1,
+     456.4,
+     480.4,
+     730.4
+    ],
+    "frac": 0.2,
+    "w": 886,
+    "h": 663
+   }
+  ],
+  "unidades": [
+   "huancane"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "huancane",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 170,
+  "archivo_img": "30-B_p170_95.jpg",
+  "recorte": [
+   115.2,
+   453.6,
+   482.4,
+   734.4
+  ],
+  "px": [
+   765,
+   585
+  ],
+  "idx": 88
+ },
+ {
+  "boletin": "30-B",
+  "archivo": "B-030-Boletin-Estudio_geologico_economico_de_rocas_y_minerales.pdf",
+  "pag": 178,
+  "leyenda": "Foto 111. Vista panorámica de la cantera Multicolor I",
+  "bbox": [
+   124.3,
+   389.4,
+   293.9,
+   399.8
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 643,
+    "bbox": [
+     124.3,
+     113.4,
+     498.5,
+     385.6
+    ],
+    "frac": 0.203,
+    "w": 1102,
+    "h": 802
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "hualhuani",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 178,
+  "archivo_img": "30-B_p178_96.jpg",
+  "recorte": [
+   122.4,
+   108.0,
+   504.0,
+   388.8
+  ],
+  "px": [
+   795,
+   585
+  ],
+  "idx": 89
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 259,
+  "leyenda": "Fotografía 153. Bancos de arenisca cuarzosa deleznable - ocurrencia Cerro Campana",
+  "bbox": [
+   155.5,
+   752.5,
+   424.0,
+   762.7
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1029,
+    "bbox": [
+     102.0,
+     481.2,
+     477.6,
+     750.7
+    ],
+    "frac": 0.202,
+    "w": 978,
+    "h": 733
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 259,
+  "archivo_img": "33-B_p259_106.jpg",
+  "recorte": [
+   100.8,
+   475.2,
+   482.4,
+   756.0
+  ],
+  "px": [
+   795,
+   585
+  ],
+  "idx": 99
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 260,
+  "leyenda": "Fotografía 154. Bancos de arenisca cuarzosa deleznable – cantera Alisuco",
+  "bbox": [
+   188.9,
+   694.4,
+   420.7,
+   704.6
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1033,
+    "bbox": [
+     316.3,
+     171.4,
+     503.5,
+     306.2
+    ],
+    "frac": 0.05,
+    "w": 390,
+    "h": 282
+   },
+   {
+    "xref": 1034,
+    "bbox": [
+     109.4,
+     396.7,
+     500.4,
+     689.8
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 260,
+  "archivo_img": "33-B_p260_107.jpg",
+  "recorte": [
+   108.0,
+   396.0,
+   504.0,
+   691.2
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 100
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 262,
+  "leyenda": "Fotografía 155. Bancos de arenisca cuarzosa deleznable – Ocurrencia Santa Rosa de Matara II",
+  "bbox": [
+   155.5,
+   681.7,
+   454.2,
+   691.9
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1040,
+    "bbox": [
+     305.5,
+     165.1,
+     492.0,
+     291.4
+    ],
+    "frac": 0.047,
+    "w": 389,
+    "h": 263
+   },
+   {
+    "xref": 1041,
+    "bbox": [
+     109.4,
+     384.2,
+     500.4,
+     677.3
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "chimu",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 262,
+  "archivo_img": "33-B_p262_108.jpg",
+  "recorte": [
+   108.0,
+   381.6,
+   504.0,
+   676.8
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 101
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 263,
+  "leyenda": "Fotografía 156. Bancos de arenisca cuarzosa deleznable – Ocurrencia Hualqui",
+  "bbox": [
+   167.8,
+   671.1,
+   412.9,
+   681.3
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1045,
+    "bbox": [
+     297.1,
+     157.2,
+     480.2,
+     287.0
+    ],
+    "frac": 0.047,
+    "w": 382,
+    "h": 272
+   },
+   {
+    "xref": 1046,
+    "bbox": [
+     95.0,
+     373.7,
+     486.0,
+     666.7
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "chimu",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 263,
+  "archivo_img": "33-B_p263_109.jpg",
+  "recorte": [
+   93.6,
+   374.4,
+   489.6,
+   669.6
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 102
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 264,
+  "leyenda": "Fotografía 157. Bancos de arenas silíceas – Cantera Casa Blanca",
+  "bbox": [
+   201.4,
+   664.2,
+   408.5,
+   674.4
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1050,
+    "bbox": [
+     315.6,
+     148.8,
+     499.2,
+     272.4
+    ],
+    "frac": 0.045,
+    "w": 383,
+    "h": 258
+   },
+   {
+    "xref": 1051,
+    "bbox": [
+     109.4,
+     366.7,
+     500.4,
+     659.8
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "chimu",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 264,
+  "archivo_img": "33-B_p264_110.jpg",
+  "recorte": [
+   108.0,
+   367.2,
+   504.0,
+   662.4
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 103
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 265,
+  "leyenda": "Fotografía 158. Extracción artesanal de arena silícea – Cantera Cabracabra",
+  "bbox": [
+   173.0,
+   448.2,
+   407.8,
+   458.4
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1055,
+    "bbox": [
+     95.0,
+     150.5,
+     486.0,
+     443.5
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   },
+   {
+    "xref": 1056,
+    "bbox": [
+     301.4,
+     522.5,
+     485.0,
+     631.9
+    ],
+    "frac": 0.04,
+    "w": 383,
+    "h": 228
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "chimu",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 265,
+  "archivo_img": "33-B_p265_111.jpg",
+  "recorte": [
+   93.6,
+   151.2,
+   489.6,
+   446.4
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "nota": "Cantera de Cajamarca sin unidad indicada en el boletín.",
+  "idx": 104
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 266,
+  "leyenda": "Fotografía 159. Bancos de arena silícea rosácea – Cantera Lavasil 1",
+  "bbox": [
+   196.8,
+   677.1,
+   412.8,
+   687.3
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1060,
+    "bbox": [
+     302.2,
+     149.5,
+     484.1,
+     281.0
+    ],
+    "frac": 0.048,
+    "w": 380,
+    "h": 275
+   },
+   {
+    "xref": 1061,
+    "bbox": [
+     109.4,
+     379.7,
+     500.4,
+     672.7
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "farrat",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 266,
+  "archivo_img": "33-B_p266_112.jpg",
+  "recorte": [
+   108.0,
+   374.4,
+   504.0,
+   676.8
+  ],
+  "px": [
+   825,
+   630
+  ],
+  "idx": 105
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 268,
+  "leyenda": "Fotografía 160. Vista panorámica de la cantera Bellavista",
+  "bbox": [
+   216.2,
+   680.7,
+   393.3,
+   690.9
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1067,
+    "bbox": [
+     313.9,
+     185.0,
+     497.5,
+     307.7
+    ],
+    "frac": 0.045,
+    "w": 383,
+    "h": 256
+   },
+   {
+    "xref": 1477,
+    "bbox": [
+     109.4,
+     383.3,
+     500.4,
+     676.3
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 268,
+  "archivo_img": "33-B_p268_113.jpg",
+  "recorte": [
+   108.0,
+   381.6,
+   504.0,
+   676.8
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 106
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 270,
+  "leyenda": "Fotografía 161: Vista panorámica de la cantera San Felipe",
+  "bbox": [
+   214.8,
+   434.0,
+   394.7,
+   444.2
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1076,
+    "bbox": [
+     109.0,
+     136.6,
+     500.2,
+     429.6
+    ],
+    "frac": 0.229,
+    "w": 978,
+    "h": 733
+   },
+   {
+    "xref": 1077,
+    "bbox": [
+     301.0,
+     489.8,
+     491.3,
+     614.4
+    ],
+    "frac": 0.047,
+    "w": 397,
+    "h": 260
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 270,
+  "archivo_img": "33-B_p270_114.jpg",
+  "recorte": [
+   108.0,
+   136.8,
+   504.0,
+   432.0
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 107
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 271,
+  "leyenda": "Fotografía 162. Depósito de arena silícea bastante disgregable - cantera Gracias Padre Eterno",
+  "bbox": [
+   145.0,
+   411.2,
+   436.0,
+   421.4
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1081,
+    "bbox": [
+     95.0,
+     113.8,
+     486.0,
+     406.8
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "chimu",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 271,
+  "archivo_img": "33-B_p271_115.jpg",
+  "recorte": [
+   93.6,
+   108.0,
+   489.6,
+   410.4
+  ],
+  "px": [
+   825,
+   630
+  ],
+  "nota": "Cantera de Cajamarca sin unidad indicada en el boletín.",
+  "idx": 108
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 277,
+  "leyenda": "Fotografía 164: Afloramientos de bancos de areniscas – cerro Sumiape",
+  "bbox": [
+   180.5,
+   688.4,
+   400.3,
+   698.6
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1106,
+    "bbox": [
+     300.7,
+     160.8,
+     484.3,
+     294.5
+    ],
+    "frac": 0.049,
+    "w": 383,
+    "h": 279
+   },
+   {
+    "xref": 1107,
+    "bbox": [
+     95.0,
+     391.0,
+     486.0,
+     684.0
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 277,
+  "archivo_img": "33-B_p277_116.jpg",
+  "recorte": [
+   93.6,
+   388.8,
+   489.6,
+   684.0
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 109
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 278,
+  "leyenda": "Fotografía 165. Afloramientos de bancos de areniscas – ocurrencia ATIMMSA 40",
+  "bbox": [
+   179.0,
+   686.5,
+   430.3,
+   696.7
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1111,
+    "bbox": [
+     314.6,
+     154.3,
+     498.2,
+     288.5
+    ],
+    "frac": 0.049,
+    "w": 383,
+    "h": 280
+   },
+   {
+    "xref": 1112,
+    "bbox": [
+     109.4,
+     389.0,
+     500.4,
+     682.1
+    ],
+    "frac": 0.229,
+    "w": 391,
+    "h": 293
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "goyllarisquizga",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 278,
+  "archivo_img": "33-B_p278_117.jpg",
+  "recorte": [
+   108.0,
+   388.8,
+   504.0,
+   684.0
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "idx": 110
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 281,
+  "leyenda": "Fotografía 166. Afloramientos de bancos de areniscas cuarzosas – ocurrencia Cerro San Antonio",
+  "bbox": [
+   140.2,
+   692.0,
+   440.8,
+   702.2
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1123,
+    "bbox": [
+     304.1,
+     161.5,
+     503.8,
+     296.4
+    ],
+    "frac": 0.054,
+    "w": 610,
+    "h": 412
+   },
+   {
+    "xref": 1124,
+    "bbox": [
+     94.8,
+     394.6,
+     486.0,
+     687.6
+    ],
+    "frac": 0.229,
+    "w": 978,
+    "h": 733
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "farrat",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 281,
+  "archivo_img": "33-B_p281_118.jpg",
+  "recorte": [
+   93.6,
+   388.8,
+   489.6,
+   691.2
+  ],
+  "px": [
+   825,
+   630
+  ],
+  "idx": 111
+ },
+ {
+  "boletin": "33-B",
+  "archivo": "B-033-Estudio_geologico_economico_de_rocas_y_minerales_industriales_region_Cajamarca.pdf",
+  "pag": 282,
+  "leyenda": "Fotografía 167. Afloramientos de bancos de areniscas silicificada – ocurrencia El Algarrobal",
+  "bbox": [
+   163.7,
+   681.9,
+   445.6,
+   692.1
+  ],
+  "pag_wh": [
+   595.2,
+   841.9
+  ],
+  "imagenes": [
+   {
+    "xref": 1128,
+    "bbox": [
+     310.8,
+     169.2,
+     494.2,
+     299.8
+    ],
+    "frac": 0.048,
+    "w": 382,
+    "h": 272
+   },
+   {
+    "xref": 1129,
+    "bbox": [
+     109.0,
+     384.5,
+     500.2,
+     677.5
+    ],
+    "frac": 0.229,
+    "w": 978,
+    "h": 733
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTOGRAFIA",
+  "unidad": "chimu",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 282,
+  "archivo_img": "33-B_p282_119.jpg",
+  "recorte": [
+   108.0,
+   381.6,
+   504.0,
+   676.8
+  ],
+  "px": [
+   825,
+   615
+  ],
+  "nota": "Cantera de Cajamarca sin unidad indicada en el boletín.",
+  "idx": 112
+ },
+ {
+  "boletin": "11-B",
+  "archivo": "B011-Boletin-Estudio_recursos_minerales_Peru_Franja-2.pdf",
+  "pag": 187,
+  "leyenda": "Foto N• 34 Depósito de lajas Cupisco, se muestran afloramientos de las areniscas cuarzosas y cuarcitas de la Fm. Huancané, utilizadas como roca ornamental",
+  "bbox": [
+   76.3,
+   399.2,
+   502.9,
+   424.8
+  ],
+  "pag_wh": [
+   576.0,
+   826.0
+  ],
+  "imagenes": [
+   {
+    "xref": 585,
+    "bbox": [
+     -11.8,
+     0.0,
+     587.3,
+     844.8
+    ],
+    "frac": 1.064,
+    "w": 1248,
+    "h": 1760
+   }
+  ],
+  "unidades": [
+   "huancane"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "huancane",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 187,
+  "archivo_img": "11-B_p187_120.jpg",
+  "recorte": [
+   64.8,
+   100.8,
+   504.0,
+   396.0
+  ],
+  "px": [
+   915,
+   615
+  ],
+  "idx": 113
+ },
+ {
+  "boletin": "22-B",
+  "archivo": "B022-Boletin-Estudio_geologico_economico_rocas_minerales_industriales_Arequipa.pdf",
+  "pag": 103,
+  "leyenda": "Foto 60 Afloramiento de areniscas de la Formación Labra.",
+  "bbox": [
+   117.4,
+   743.5,
+   328.6,
+   756.0
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 399,
+    "bbox": [
+     117.4,
+     494.6,
+     488.0,
+     742.9
+    ],
+    "frac": 0.184,
+    "w": 494,
+    "h": 331
+   }
+  ],
+  "unidades": [
+   "labra"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "labra",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 103,
+  "archivo_img": "22-B_p103_123.jpg",
+  "recorte": [
+   115.2,
+   489.6,
+   489.6,
+   741.6
+  ],
+  "px": [
+   780,
+   525
+  ],
+  "idx": 116
+ },
+ {
+  "boletin": "22-B",
+  "archivo": "B022-Boletin-Estudio_geologico_economico_rocas_minerales_industriales_Arequipa.pdf",
+  "pag": 104,
+  "leyenda": "Foto 62 Afloramiento de areniscas de la Formación Labra (Grupo Yura).",
+  "bbox": [
+   117.6,
+   726.6,
+   371.5,
+   739.0
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 404,
+    "bbox": [
+     117.4,
+     114.4,
+     490.0,
+     379.4
+    ],
+    "frac": 0.197,
+    "w": 642,
+    "h": 483
+   },
+   {
+    "xref": 405,
+    "bbox": [
+     116.0,
+     446.8,
+     494.6,
+     717.0
+    ],
+    "frac": 0.204,
+    "w": 505,
+    "h": 360
+   }
+  ],
+  "unidades": [
+   "labra"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "labra",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 104,
+  "archivo_img": "22-B_p104_124.jpg",
+  "recorte": [
+   115.2,
+   446.4,
+   496.8,
+   720.0
+  ],
+  "px": [
+   795,
+   570
+  ],
+  "idx": 117
+ },
+ {
+  "boletin": "22-B",
+  "archivo": "B022-Boletin-Estudio_geologico_economico_rocas_minerales_industriales_Arequipa.pdf",
+  "pag": 105,
+  "leyenda": "Foto 63 Afloramiento de areniscas de la Formación Labra (Grupo Yura).",
+  "bbox": [
+   122.8,
+   350.9,
+   376.7,
+   363.3
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 409,
+    "bbox": [
+     123.1,
+     114.4,
+     486.7,
+     350.1
+    ],
+    "frac": 0.171,
+    "w": 485,
+    "h": 314
+   }
+  ],
+  "unidades": [
+   "labra"
+  ],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "labra",
+  "origen": "nombre",
+  "micro": false,
+  "pag_foto": 105,
+  "archivo_img": "22-B_p105_125.jpg",
+  "recorte": [
+   122.4,
+   115.2,
+   489.6,
+   352.8
+  ],
+  "px": [
+   765,
+   495
+  ],
+  "idx": 118
+ },
+ {
+  "boletin": "26-B",
+  "archivo": "B026-Boletin-Estudio_geologico_economico_rocas...Moquegua_Tacna.pdf",
+  "pag": 111,
+  "leyenda": "Foto 49. Vista panorámica de la cantera Fatima 1.",
+  "bbox": [
+   85.8,
+   745.8,
+   270.0,
+   758.2
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 557,
+    "bbox": [
+     85.9,
+     114.3,
+     496.0,
+     375.7
+    ],
+    "frac": 0.214,
+    "w": 547,
+    "h": 348
+   },
+   {
+    "xref": 558,
+    "bbox": [
+     86.3,
+     480.2,
+     494.9,
+     740.7
+    ],
+    "frac": 0.212,
+    "w": 545,
+    "h": 347
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "hualhuani",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 111,
+  "archivo_img": "26-B_p111_127.jpg",
+  "recorte": [
+   86.4,
+   475.2,
+   496.8,
+   741.6
+  ],
+  "px": [
+   855,
+   555
+  ],
+  "idx": 119
+ },
+ {
+  "boletin": "26-B",
+  "archivo": "B026-Boletin-Estudio_geologico_economico_rocas...Moquegua_Tacna.pdf",
+  "pag": 111,
+  "leyenda": "Foto 48. Afloramiento de areniscas silicificadas - Cantera Oxana.",
+  "bbox": [
+   86.4,
+   380.8,
+   313.3,
+   393.2
+  ],
+  "pag_wh": [
+   595.0,
+   842.0
+  ],
+  "imagenes": [
+   {
+    "xref": 557,
+    "bbox": [
+     85.9,
+     114.3,
+     496.0,
+     375.7
+    ],
+    "frac": 0.214,
+    "w": 547,
+    "h": 348
+   },
+   {
+    "xref": 558,
+    "bbox": [
+     86.3,
+     480.2,
+     494.9,
+     740.7
+    ],
+    "frac": 0.212,
+    "w": 545,
+    "h": 347
+   }
+  ],
+  "unidades": [],
+  "tema": true,
+  "tipo": "FOTO",
+  "unidad": "labra",
+  "origen": "cantera",
+  "micro": false,
+  "pag_foto": 111,
+  "archivo_img": "26-B_p111_126.jpg",
+  "recorte": [
+   86.4,
+   115.2,
+   496.8,
+   374.4
+  ],
+  "px": [
+   855,
+   540
+  ],
+  "idx": 120
+ }
+]

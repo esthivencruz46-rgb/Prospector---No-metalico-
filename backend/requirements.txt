@@ -1,0 +1,10 @@
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4
+requests==2.32.3
+shapely>=2.0,<3
+pyproj>=3.6,<4
+numpy
+Pillow==10.4.0
+sentinelhub==3.11.5
+pyshp==2.3.1

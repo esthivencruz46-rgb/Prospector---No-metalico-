@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+node_modules/
+frontend/dist/
+frontend/android/
+.pytest_cache/
+*.tsbuildinfo
+
+# mosaicos del DEM Copernicus (se bajan solos, ~19 MB cada uno)
+backend/cache_dem/
+
+# geología descargada de INGEMMET (~500 MB) y cachés locales
+backend/datos/geologia.sqlite
+backend/datos/*.tmp
+
+# documentos y material de trabajo (no van al servidor)
+boletines/
+revision_informe/
+/*.pdf
+/*.xlsx
+/*.docx
+boletines_fotos/

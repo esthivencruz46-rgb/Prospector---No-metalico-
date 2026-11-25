@@ -1,0 +1,5 @@
+# Solo para desarrollo/pruebas (Render usa requirements.txt).
+-r requirements.txt
+pytest>=8
+httpx>=0.27
+rasterio>=1.4  # solo scripts/censo_s2_aws.py (Sentinel-2 de AWS)
