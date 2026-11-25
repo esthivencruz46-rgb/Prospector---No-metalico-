@@ -878,11 +878,23 @@ export default function App() {
   });
   const [verRuta, setVerRuta] = useState(false);      // panel de la ruta abierto
   const [modoRuta, setModoRuta] = useState(false);    // el próximo toque en el mapa = destino de la ruta
+  // último destino de ruta trazado en cada cuadrícula (25/11/2026: el informe lo usa aunque se cierre el panel de ruta)
+  const [destinosCelda, setDestinosCelda] = useState<Record<string, { lat: number; lon: number }>>(() => {
+    try { return JSON.parse(localStorage.getItem("prospector-rmi:destino-celda") || "{}"); } catch { return {}; }
+  });
+  function recordarDestino(lat: number, lon: number) {
+    const cod = celdaEn(lat, lon, "25K").codigo;
+    setDestinosCelda((d) => {
+      const n = { ...d, [cod]: { lat, lon } };
+      try { localStorage.setItem("prospector-rmi:destino-celda", JSON.stringify(n)); } catch { /* sin almacenamiento */ }
+      return n;
+    });
+  }
   async function calcularRuta(lat: number, lon: number, forzar = false) {
     const k = claveRuta(lat, lon);
     const ya = rutas[k];
     setVerRuta(true);
-    if (!forzar && ya && ya !== "cargando" && !("error" in ya) && "bloques" in ya) { setDestino({ lat, lon }); return; }
+    if (!forzar && ya && ya !== "cargando" && !("error" in ya) && "bloques" in ya) { setDestino({ lat, lon }); recordarDestino(lat, lon); return; }
     setRutas((r) => ({ ...r, [k]: "cargando" }));
     try {
       const x = await api.ruta(fabrica, lat, lon);
@@ -894,6 +906,7 @@ export default function App() {
         return n;
       });
       setDestino({ lat, lon });
+      recordarDestino(lat, lon);
     } catch (e) {
       setDestino({ lat, lon });
       setRutas((r) => ({ ...r, [k]: { error: (e as Error).message } }));
@@ -2351,8 +2364,30 @@ export default function App() {
             noApto: geoLibre.haNoApto, extinguido: geoLibre.haExtinguido, sinSatelite: true, unidades: [...unidadesPrio] } : null}
           prioridadLibre={prioLibre ? { url: prioLibre.url, bbox: prioLibre.bbox, libre: prioLibre.haLibre, negociable: prioLibre.haNegociable,
             noApto: prioLibre.haNoApto, extinguido: prioLibre.haExtinguido, sinSatelite: prioLibre.sinSatelite, unidades: [...unidadesPrio] } : null}
-          ruta={rutaDestino && destino ? { ruta: rutaDestino, destino: { lat: destino.lat, lon: destino.lon,
-            nombre: (() => { const c = celdaEn(destino.lat, destino.lon, "25K"); return `Punto en ${c.codigo}`; })() } } : null}
+          ruta={(() => {
+            // 1) la ruta abierta · 2) la última trazada en esta cuadrícula (aunque se haya cerrado el panel)
+            const cands = [destino, destinosCelda[celdaArea.codigo]].filter(Boolean) as { lat: number; lon: number }[];
+            for (const d of cands) {
+              const r = rutas[claveRuta(d.lat, d.lon)];
+              if (r && r !== "cargando" && !("error" in r) && "bloques" in r) {
+                return { ruta: r, destino: { lat: d.lat, lon: d.lon, nombre: `Punto en ${celdaEn(d.lat, d.lon, "25K").codigo}` } };
+              }
+            }
+            return null;
+          })()}
+          rutaAuto={async () => {
+            // 3) sin ruta trazada: desde la planta hasta la zona elegida con más ha libres (o el centro de la cuadrícula)
+            const z = prioLibre ? [...zonasElegidas].sort((x, y) => (prioLibre.porZona[y.id]?.haLibre ?? 0) - (prioLibre.porZona[x.id]?.haLibre ?? 0))[0] : undefined;
+            const lat = z ? z.centro[1] : (celdaArea.norte + celdaArea.sur) / 2;
+            const lon = z ? z.centro[0] : (celdaArea.oeste + celdaArea.este) / 2;
+            const k = claveRuta(lat, lon);
+            const ya = rutas[k];
+            const r = ya && ya !== "cargando" && !("error" in ya) && "bloques" in ya ? ya : await api.ruta(fabrica, lat, lon);
+            setRutas((x) => ({ ...x, [k]: r }));
+            recordarDestino(lat, lon);
+            const nombre = z ? `${z.unidad.replace(/^Grupo [^-]+ - /, "").replace(/^Formación /, "Fm. ")} (${celdaArea.codigo})` : `Centro de ${celdaArea.codigo}`;
+            return { ruta: r, destino: { lat, lon, nombre } };
+          }}
           onCerrar={() => setVerLaminas(false)} />
       )}
 

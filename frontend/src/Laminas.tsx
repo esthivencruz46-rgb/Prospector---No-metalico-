@@ -28,6 +28,8 @@ interface Props {
   geologiaLibre?: { url: string; bbox: number[]; libre: number; negociable: number; noApto: number; extinguido: number;
                     sinSatelite: boolean; unidades?: string[] } | null;
   ruta?: { ruta: Ruta; destino: { lat: number; lon: number; nombre: string } } | null;
+  /** si no hay ruta trazada, la lámina de ruta la calcula sola (planta → zona con más ha libres o centro de la cuadrícula) */
+  rutaAuto?: () => Promise<{ ruta: Ruta; destino: { lat: number; lon: number; nombre: string } }>;
   /** modo «Informe PDF»: todas las láminas en orden + portada, antecedentes y análisis, numeradas, en un solo PDF */
   informe?: boolean;
   /** NDVI, ferruginosa y arcillas solo dentro de estas unidades (percentiles de cada una); null = toda la cuadrícula */
@@ -65,7 +67,7 @@ const NOMBRES: Record<Tipo, string> = {
   geologia: "Geología de interés (zonas A/B/C)",
 };
 
-export default function Laminas({ celda, res, s2, materia, prioridadLibre, geologiaLibre, ruta, fabrica, opacidades, informe, mejorZona, unidadesPrio, ambitoUnidades, onCerrar }: Props) {
+export default function Laminas({ celda, res, s2, materia, prioridadLibre, geologiaLibre, ruta, rutaAuto, fabrica, opacidades, informe, mejorZona, unidadesPrio, ambitoUnidades, onCerrar }: Props) {
   const porUnidad = !!ambitoUnidades?.length;
   const listaUds = (ambitoUnidades ?? []).map((u) => u.replace(/^Grupo [^-]+ - /, "")).join(", ");
   const [autor, setAutor] = useState(() => { try { return localStorage.getItem(CLAVE_AUTOR) ?? ""; } catch { return ""; } });
@@ -85,7 +87,7 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
     ndvi: s2?.capas?.ndvi && bbox ? null : "necesita un análisis Sentinel-2 nuevo («Nueva toma»)",
     bsi: s2?.capas?.bsi && bbox ? null : "necesita un análisis Sentinel-2 nuevo («Nueva toma»)",
     ferruginosas: s2?.capas?.ferruginosas && bbox ? null : "necesita un análisis Sentinel-2 nuevo («Nueva toma»)",
-    ruta: ruta ? null : "primero traza una ruta (botón de ruta)",
+    ruta: ruta || rutaAuto ? null : "primero traza una ruta (botón de ruta)",
     protegidas: null, concesiones: null,          // los consulta el servidor en GEOCATMIN
     geologia_completa: res.soloSatelite ? "necesita la geología" : null,
     geologia_desc: res.soloSatelite ? "necesita la geología" : null,
@@ -303,7 +305,7 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
             : "INGEMMET · Sentinel-2 L2A (ESA Copernicus) · ESA WorldCover" };
       }
       case "ruta": {
-        const r = ruta!;
+        const r = ruta ?? await rutaAuto!();   // sin ruta trazada: se calcula hasta la mejor zona libre
         return { tipo: "ruta", autor, empresa, proyecto, titulo: "Mapa de ruta y distancias", subtitulo: `Planta KEDA → ${r.destino.nombre}`,
           ruta: { origen: { lat: fabrica[0], lon: fabrica[1], nombre: FABRICA_NOMBRE },
             destino: r.destino, bloques: r.ruta.bloques, km_total: r.ruta.km_total, km_linea_recta: r.ruta.km_linea_recta },
