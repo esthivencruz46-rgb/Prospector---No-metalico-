@@ -333,13 +333,58 @@ def _lamina_png(q: dict) -> bytes:
     return armar(q)
 
 
-def _pdf_de_imagenes(imgs: list, titulo: str) -> bytes:
-    """PDF A3 a 150 ppp con las páginas en JPEG calidad 70 (texto legible; ~40 % menos que antes)."""
+def _a_jpeg(im) -> bytes:
+    """Página → JPEG calidad 70, 4:2:0 (texto legible; ~40 % menos que a 92)."""
     from io import BytesIO
     buf = BytesIO()
-    imgs[0].save(buf, "PDF", save_all=True, append_images=imgs[1:], resolution=150, quality=70, subsampling=2,
-                 title=titulo[:120], author="Prospector RMI")
+    im.convert("RGB").save(buf, "JPEG", quality=70, subsampling=2, optimize=True)
     return buf.getvalue()
+
+
+def _pdf_de_jpegs(jpegs: list[bytes], titulo: str, ppp: int = 150) -> bytes:
+    """PDF con cada página = un JPEG incrustado TAL CUAL (DCTDecode), sin volver a descomprimirlo: la memoria no
+    crece con el número de páginas (24/11/2026: en Render, 512 MB, el informe con todas las páginas en RGB se caía)."""
+    from io import BytesIO
+    from PIL import Image
+    objs: list[bytes] = []                     # objetos 1..n (1 catálogo, 2 páginas, luego 3 por página)
+    n = len(jpegs)
+    kids = " ".join(f"{3 + 3 * i} 0 R" for i in range(n))
+    objs.append(b"<< /Type /Catalog /Pages 2 0 R >>")
+    objs.append(f"<< /Type /Pages /Kids [{kids}] /Count {n} >>".encode())
+    for i, j in enumerate(jpegs):
+        w, h = Image.open(BytesIO(j)).size     # solo lee la cabecera
+        pw, ph = w * 72 / ppp, h * 72 / ppp
+        pag, img, cont = 3 + 3 * i, 4 + 3 * i, 5 + 3 * i
+        objs.append(f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {pw:.2f} {ph:.2f}] /Resources << /XObject << /Im0 {img} 0 R >> >> "
+                    f"/Contents {cont} 0 R >>".encode())
+        objs.append(f"<< /Type /XObject /Subtype /Image /Width {w} /Height {h} /ColorSpace /DeviceRGB /BitsPerComponent 8 "
+                    f"/Filter /DCTDecode /Length {len(j)} >>\nstream\n".encode() + j + b"\nendstream")
+        c = f"q {pw:.2f} 0 0 {ph:.2f} 0 0 cm /Im0 Do Q".encode()
+        objs.append(f"<< /Length {len(c)} >>\nstream\n".encode() + c + b"\nendstream")
+    t = titulo[:120].replace("\\", "").replace("(", "[").replace(")", "]")
+    objs.append(f"<< /Title ({t}) /Author (Prospector RMI) >>".encode("latin-1", "replace"))
+    out = BytesIO()
+    out.write(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
+    pos = []
+    for k, o in enumerate(objs, 1):
+        pos.append(out.tell())
+        out.write(f"{k} 0 obj\n".encode() + o + b"\nendobj\n")
+    xref = out.tell()
+    out.write(f"xref\n0 {len(objs) + 1}\n0000000000 65535 f \n".encode())
+    for p_ in pos:
+        out.write(f"{p_:010d} 00000 n \n".encode())
+    out.write(f"trailer\n<< /Size {len(objs) + 1} /Root 1 0 R /Info {len(objs)} 0 R >>\nstartxref\n{xref}\n%%EOF\n".encode())
+    return out.getvalue()
+
+
+def _pdf_de_imagenes(imgs: list, titulo: str) -> bytes:
+    """PDF A3 a 150 ppp con las páginas en JPEG calidad 70 (texto legible; ~40 % menos que antes)."""
+    return _pdf_de_jpegs([_a_jpeg(im) for im in imgs], titulo)
+
+
+# Láminas a la vez en el informe: 4 en la PC; 1 en Render (plan gratuito, 512 MB: con 4 se quedaba sin memoria).
+# Render define la variable RENDER; INFORME_HILOS la fija a mano.
+INFORME_HILOS = int(os.environ.get("INFORME_HILOS") or (1 if os.environ.get("RENDER") else 4))
 
 
 @app.post("/lamina")
@@ -355,7 +400,7 @@ def lamina(p: PeticionLamina):
 
 
 # ---------------------------------------------------------------- INFORME PDF en el servidor (24/11/2026)
-# Todas las páginas se generan EN PARALELO (4 a la vez) en un hilo de fondo; la app consulta el avance y baja el PDF.
+# Las páginas se generan en un hilo de fondo (INFORME_HILOS a la vez); la app consulta el avance y baja el PDF.
 _INFORMES: dict[str, dict] = {}
 
 
@@ -383,7 +428,8 @@ def informe_iniciar(p: PeticionInforme):
     def una(q):
         try:
             png = _lamina_png(q)
-            return Image.open(BytesIO(png)).convert("RGB")
+            with Image.open(BytesIO(png)) as im:
+                return _a_jpeg(im)                 # se guarda comprimida (~1 MB), no en RGB (~13 MB)
         except Exception as e:  # noqa: BLE001
             job["errores"].append(f"{q.get('titulo') or q.get('tipo')}: {e}")
             return None
@@ -392,11 +438,11 @@ def informe_iniciar(p: PeticionInforme):
 
     def trabajar():
         try:
-            with ThreadPoolExecutor(4) as ex:
-                imgs = [i for i in ex.map(una, paginas) if i is not None]
-            if not imgs:
+            with ThreadPoolExecutor(INFORME_HILOS) as ex:
+                jpgs = [i for i in ex.map(una, paginas) if i is not None]
+            if not jpgs:
                 raise RuntimeError("no se pudo generar ninguna página")
-            job["pdf"] = _pdf_de_imagenes(imgs, p.titulo)
+            job["pdf"] = _pdf_de_jpegs(jpgs, p.titulo)
             job["estado"] = "listo"
         except Exception as e:  # noqa: BLE001
             job["estado"] = "error"

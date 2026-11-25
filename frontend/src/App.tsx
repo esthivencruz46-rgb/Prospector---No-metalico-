@@ -49,6 +49,7 @@ import {
   FABRICA_INICIAL, celda25, celdaComoPoligono, celdaEn, celdasEnVista, distanciaKm, formatoKm, gms, hoja50, parsearUbicacion, utm, cuadricula100En,
   tieneTierra, vecina, type Celda, type Rumbo, type Ubicacion,
 } from "./geo";
+import { guardarArchivo } from "./guardar";
 
 type Fase = "inicio" | "area" | "buscando" | "resultado";
 type Pestana = "afloramientos" | "sentinel" | "biblio";
@@ -334,14 +335,7 @@ function fichaCelda(k: Carpeta, g: CeldaGuardada, fabrica: [number, number]): st
 }
 
 function descargar(nombre: string, contenido: string, tipo = "text/csv;charset=utf-8") {
-  const url = URL.createObjectURL(new Blob([contenido], { type: tipo }));
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = nombre;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  void guardarArchivo(new Blob([contenido], { type: tipo }), nombre);   // en el celular: Documentos/Prospector RMI
 }
 
 function etiquetaResumen(h: ResumenCelda): string {

@@ -12,6 +12,7 @@ const leyendaClases = (p0: number, menos: string, mas: string) => CLASES_COLOR.m
 });
 import { api, type Afloramiento, type ResultadoBusqueda, type ResultadoSentinel, type Ruta } from "./api";
 import { gms, type Celda } from "./geo";
+import { guardarArchivo } from "./guardar";
 
 type Tipo = "natural" | "swir" | "ndvi" | "bsi" | "ferruginosas" | "arcillas" | "protegidas" | "concesiones" | "libres"
   | "geologia_completa" | "geologia_desc" | "topografia" | "geologia_libre" | "prioridad" | "ruta" | "antecedentes" | "unidades" | "analisis" | "geologia";
@@ -311,13 +312,7 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
     }
   }
 
-  const bajar = (blob: Blob, nombre: string) => {
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = nombre;
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-  };
+  const bajar = (blob: Blob, nombre: string) => { void guardarArchivo(blob, nombre); };   // en el celular: Documentos
   const aDataUrl = (b: Blob) => new Promise<string>((ok, mal) => {
     const r = new FileReader(); r.onload = () => ok(r.result as string); r.onerror = () => mal(r.error); r.readAsDataURL(b);
   });

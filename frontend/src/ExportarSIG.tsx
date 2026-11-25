@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Download, Globe2, Loader2, X } from "lucide-react";
 import { api, type Afloramiento } from "./api";
 import type { Celda } from "./geo";
+import { guardarArchivo } from "./guardar";
 
 const CAPAS_TXT = [
   ["Límite de la cuadrícula", "1:25 000"],
@@ -35,11 +36,7 @@ export default function ExportarSIG({ celda, zonas, prioridad, onCerrar }: {
         zonas: zonas.map((a) => ({ clase: a.clase, unidad: a.unidad, litologia: a.litologia || a.descripcion, geometria: a.geometria })),
         prioridad: prioridad ? { png: prioridad.url, bbox: prioridad.bbox } : null,
       });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = formato === "shp" ? `${celda.codigo}_capas_shp.zip` : `${celda.codigo}_capas.kmz`;
-      a.click();
-      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      void guardarArchivo(blob, formato === "shp" ? `${celda.codigo}_capas_shp.zip` : `${celda.codigo}_capas.kmz`);
       setEstado("listo");
     } catch (e) {
       setEstado((e as Error).message);

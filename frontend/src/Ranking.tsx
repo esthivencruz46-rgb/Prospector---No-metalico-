@@ -8,6 +8,7 @@ import { API_URL } from "./api";
 import { celda25 } from "./geo";
 import { aptitudVidrio, NIVEL_TEXTO, type AptitudVidrio } from "./vidrio";
 import Paginador, { usePaginas } from "./Paginador";
+import { guardarArchivo } from "./guardar";
 
 export interface UnidadRanking { id: string; nombre: string; prioridad: number; rango?: number; km2: number }
 export interface FilaRanking {
@@ -136,10 +137,7 @@ export default function Ranking({ onIr, onMapa, onCerrar }: {
       const filas = listaDesc.map((f, i) => [i + 1, f.codigo, NIVEL_TEXTO[f.nivel], f.puntaje, q(f.unidad), f.roca ?? "", n(f.km2_libre), n(f.km2),
         q(f.a_favor.slice(1).join(" · ")), q(f.en_contra.join(" · ")), q(f.estratos.map((e) => e.texto).join(" · ")), f.espesor ?? "",
         f.selva ? "sí" : "no", f.km_fabrica, f.carta === "50K" ? "1:50 000" : "1:100 000", q(f.descripcion)].join(";"));
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(new Blob(["\ufeff" + [cab, ...filas].join("\r\n")], { type: "text/csv" }));
-      a.download = "ranking_por_descripcion_vidrio.csv";
-      a.click();
+      void guardarArchivo(new Blob(["\ufeff" + [cab, ...filas].join("\r\n")], { type: "text/csv" }), "ranking_por_descripcion_vidrio.csv");
       return;
     }
     if (criterio === "vf") {
@@ -148,10 +146,7 @@ export default function Ranking({ onIr, onMapa, onCerrar }: {
       const cab = "puesto;cuadricula;mejor_unidad;rango_supermadurez;grano;km2_blanco_grano_medio_grueso;km2_libres_utilizables_aprox;km2_casi_blanco;km2_blanco_fino_a_medio;selva;km_fabrica;descripcion_carta;quimica;unidades";
       const filas = listaVf.map((f, i) => [i + 1, f.codigo, f.unidad, f.rango, f.grano, n(f.km2), n(f.km2_libre_aprox), n(f.km2_casi_blanco),
         n(f.km2_fino_a_medio), f.selva ? "sí" : "no", f.km_fabrica, q(f.frase), q(f.quimica), q(f.unidades)].join(";"));
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(new Blob(["﻿" + [cab, ...filas].join("\r\n")], { type: "text/csv" }));
-      a.download = "ranking_vidrio_flotado.csv";
-      a.click();
+      void guardarArchivo(new Blob(["﻿" + [cab, ...filas].join("\r\n")], { type: "text/csv" }), "ranking_vidrio_flotado.csv");
       return;
     }
     const sm = criterio === "sm";
@@ -164,10 +159,7 @@ export default function Ranking({ onIr, onMapa, onCerrar }: {
         f.carta === "50K" ? "1:50 000" : "1:100 000", f.selva ? "sí" : "no", f.bosque_pct ?? "", f.util_pct ?? "", f.n_concesiones ?? "", f.km_fabrica]
       : [i + 1, f.codigo, f.carta === "50K" ? "1:50 000" : "1:100 000", n(f.valor), f.aprox ? "sí" : "no", f.selva ? "sí" : "no",
         f.bosque_pct ?? "", f.util_pct ?? "", f.n_concesiones ?? "", f.km_fabrica]).join(";"));
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["﻿" + [cab, ...filas].join("\r\n")], { type: "text/csv" }));
-    a.download = sm ? "ranking_supermaduras.csv" : "ranking_nacional_AB.csv";
-    a.click();
+    void guardarArchivo(new Blob(["﻿" + [cab, ...filas].join("\r\n")], { type: "text/csv" }), sm ? "ranking_supermaduras.csv" : "ranking_nacional_AB.csv");
   }
 
   const seg = <T extends string | number>(val: T, set: (v: T) => void, ops: [T, string][]) => (

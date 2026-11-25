@@ -7,6 +7,7 @@ import { API_URL } from "./api";
 import { celda25 } from "./geo";
 import type { CeldaCalor } from "./Ranking";
 import Paginador, { usePaginas } from "./Paginador";
+import { guardarArchivo } from "./guardar";
 
 /** [código 25K, km² de la unidad, afloramientos, carta, km a la fábrica, departamento, provincia] */
 export type CeldaSM = [string, number, number, string, number, string, string];
@@ -183,10 +184,7 @@ export default function Supermaduras({ onIr, onMapa, onCerrar, unidadInicial }: 
     const cab = "cuadricula;km2;km2_ponderado;afloramientos;carta;unidades;departamento;provincia;km_fabrica";
     const filas = celdas.map((f) => [f.codigo, num(f.km2, 2), num(f.valor, 2), f.afl, f.carta,
       f.unidades.map((u) => `${u.nombre} (${num(u.km2, 2)})`).join(" | "), f.dep, f.prov, f.km].join(";"));
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["﻿" + [cab, ...filas].join("\r\n")], { type: "text/csv" }));
-    a.download = `supermaduras_${uAbierta ? uAbierta.id : tipo}.csv`;
-    a.click();
+    void guardarArchivo(new Blob(["﻿" + [cab, ...filas].join("\r\n")], { type: "text/csv" }), `supermaduras_${uAbierta ? uAbierta.id : tipo}.csv`);
   }
 
   const seg = <T extends string | number>(val: T, set: (v: T) => void, ops: [T, string][]) => (

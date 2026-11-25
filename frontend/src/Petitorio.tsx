@@ -8,6 +8,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Check, ClipboardCheck, Copy, Download, Grid3x3, RotateCcw, X } from "lucide-react";
 import { claveC100, utmAGeo, validarPetitorio, verticesPetitorio, type Cuadricula100 } from "./geo";
+import { guardarArchivo } from "./guardar";
 
 export interface EstadoPaso { hecho: boolean; fecha?: string; nota?: string }
 export interface Expediente {
@@ -147,10 +148,7 @@ export default function PanelPetitorio({ st, onCerrar, onVerCatastro, onVigilar,
   const textoVertices = vert.map((v, i) => `${i + 1}\t${v.este}\t${v.norte}`).join("\n");
   function descargarCsv() {
     const filas = ["vertice;este_m;norte_m;zona_utm", ...vert.map((v, i) => `${i + 1};${v.este};${v.norte};${zona}S`)];
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["﻿" + filas.join("\r\n")], { type: "text/csv" }));
-    a.download = `${activo!.nombre.replace(/[^\w-]+/g, "_")}_vertices_WGS84.csv`;
-    a.click();
+    void guardarArchivo(new Blob(["﻿" + filas.join("\r\n")], { type: "text/csv" }), `${activo!.nombre.replace(/[^\w-]+/g, "_")}_vertices_WGS84.csv`);
   }
 
   return (
