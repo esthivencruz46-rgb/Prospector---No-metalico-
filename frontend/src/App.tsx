@@ -19,8 +19,7 @@ import Supermaduras, { SupermadurasCelda } from "./Supermaduras";
 import PanelVigilancia, { useVigilancia } from "./Vigilancia";
 import {
   Bell, BookOpen, ClipboardCheck, Eye, Factory, Gem, SlidersHorizontal, Trophy, FileImage, FlaskConical, Layers, Library, LocateFixed, Map as IconoMapa, Mountain, Radar, Route, Satellite,
-  CalendarDays, Check, Cloud, FileText, Globe2, Leaf, MapPin, PanelLeftOpen, Pickaxe, RefreshCw, Save, Scan, Search, ShieldAlert, ShieldX, Star, Trash2, Truck, X,
-} from "lucide-react";
+  CalendarDays, Check, Cloud, FileText, Globe2, Leaf, MapPin, PanelLeftOpen, Pickaxe, RefreshCw, Save, Scan, Search, ShieldAlert, ShieldX, Star, Trash2, Truck, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { componerPrioridadSilice, mascaraZonas, type PrioridadLibre } from "./prioridadLibre";
 import {
   borrarAdjunto, borrarAnalisis, borrarTodosLosAnalisis, codigosConAnalisis, elegirRaiz, escritorApp, escritorLaptop,
@@ -1435,6 +1434,16 @@ export default function App() {
   // para el mapa: aptitud de cada zona (resalta las aptas) y la zona elegida en la lista
   const nivelesVidrio = useMemo(() => Object.fromEntries(Object.entries(vidrioPorId).map(([k, v]) => [k, v.nivel])), [vidrioPorId]);
   const [zonaSel, setZonaSel] = useState<string | null>(null);
+  // «Unidades en la Prioridad» plegado por defecto (menos carga visual; el resumen se ve en la línea del título)
+  const [unidadesAbiertas, setUnidadesAbiertas] = useState(false);
+  // barra de herramientas de la derecha: se puede plegar para ver más mapa (se recuerda en el dispositivo)
+  const [barraPlegada, setBarraPlegada] = useState<boolean>(() => {
+    try { return localStorage.getItem("prospector-rmi:barra-plegada") === "1"; } catch { return false; }
+  });
+  function plegarBarra(v: boolean) {
+    setBarraPlegada(v);
+    try { localStorage.setItem("prospector-rmi:barra-plegada", v ? "1" : "0"); } catch { /* sin almacenamiento */ }
+  }
   useEffect(() => { setZonaSel(null); }, [res]);
 
   const afloramientosOrdenados = useMemo(() => {
@@ -2474,7 +2483,12 @@ export default function App() {
       </div>
 
       {/* ---------- botones flotantes ---------- */}
-      <div className="flotantes">
+      <div className={barraPlegada ? "flotantes plegada" : "flotantes"}>
+        <button className="plegar-barra" title={barraPlegada ? "Mostrar herramientas" : "Plegar herramientas (más mapa a la vista)"}
+          aria-label={barraPlegada ? "Mostrar herramientas" : "Plegar herramientas"} onClick={() => plegarBarra(!barraPlegada)}>
+          {barraPlegada ? <ChevronLeft size={20} /> : <ChevronRight size={18} />}
+        </button>
+        {!barraPlegada && <>
         <button title="Capas" aria-label="Capas" className={verCapas ? "activo" : ""} onClick={() => setVerCapas((v) => !v)}><Layers size={20} /></button>
         <button title="Carpetas y formaciones" aria-label="Carpetas y formaciones" className={verCatalogo ? "activo" : ""}
           onClick={() => { setVerCatalogo((v) => !v); setVerCapas(false); }}><Library size={20} /></button>
@@ -2508,6 +2522,7 @@ export default function App() {
           setCapas((c) => ({ ...c, fabrica: true }));
           mapaRef.current?.irAPunto(fabrica[0], fabrica[1], 12);
         }}><Factory size={20} /></button>
+        </>}
       </div>
 
       {/* ---------- barrido de región ---------- */}
@@ -2879,6 +2894,10 @@ export default function App() {
                 </div>
                 <button title="Guardar en carpeta" className={enCarpeta.has(celdaArea.codigo) ? "estrella on" : "estrella"}
                   onClick={() => setGuardando(celdaArea)}><Star size={15} /></button>
+              </div>
+            )}
+            {celdaArea && (
+              <div className="acciones-hoja" role="toolbar" aria-label="Acciones de la cuadrícula">
                 <button title={vig.vigila(`c:${celdaArea.codigo}`) ? "Vigilada: avisos si cambia el catastro (tocar para dejar de vigilar)" : "Vigilar el catastro de esta cuadrícula"}
                   className={vig.vigila(`c:${celdaArea.codigo}`) ? "interruptor on" : "interruptor"}
                   onClick={() => (vig.vigila(`c:${celdaArea.codigo}`) ? vig.quitar(`c:${celdaArea.codigo}`)
@@ -3017,9 +3036,9 @@ export default function App() {
                   const propia = !!(celdaArea && unidadesElegidas[celdaArea.codigo]);
                   const aptas = lista.filter(([, u]) => u.nivel === "alta" || u.nivel === "media").map(([n]) => n);
                   return (
-                    <div className="unidades-prio">
-                      <div className="up-cab"><span className="eti">Unidades en la Prioridad</span>
-                        <small>{unidadesPrio.size} de {lista.length}{propia ? " · tu elección" : " · A y B (por defecto)"}</small></div>
+                    <details className="unidades-prio" open={unidadesAbiertas} onToggle={(e) => setUnidadesAbiertas((e.target as HTMLDetailsElement).open)}>
+                      <summary className="up-cab"><span className="eti">Unidades en la Prioridad</span>
+                        <small>{unidadesPrio.size} de {lista.length}{propia ? " · tu elección" : " · A y B (por defecto)"}</small></summary>
                       {s2?.disponible && <small className="up-nota">Cada unidad se analiza aislada: NDVI, anomalía ferruginosa y arcilla con percentiles de SUS píxeles.</small>}
                       <div className="up-chips">
                         {lista.map(([nombre, u]) => {
@@ -3047,7 +3066,7 @@ export default function App() {
                         <button className="enlace" onClick={() => elegirUnidades(lista.map(([n]) => n))}>Todas</button>
                         <button className="enlace" onClick={() => elegirUnidades([])}>Ninguna</button>
                       </div>
-                    </div>
+                    </details>
                   );
                 })()}
                 {prioLibre ? (() => {

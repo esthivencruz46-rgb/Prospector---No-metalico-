@@ -1172,3 +1172,29 @@ details.toma.plegable.alerta { border-left-color: #fbbf24; }
 .ambito-s2 .eti { margin-right: 4px; }
 .ambito-s2 button { padding: 3px 10px; border-radius: 999px; border: 1px solid var(--linea, #334155); background: transparent; color: var(--suave); font-size: 12px; cursor: pointer; }
 .ambito-s2 button.on { border-color: #22d3ee; color: var(--texto, #e2e8f0); background: rgba(34, 211, 238, .1); }
+
+/* ---- hoja de resultados más fácil de recorrer (24/11/2026, «no se puede subir y bajar bien») ----
+   Toda la hoja se desplaza como UNA sola página (antes solo una cajita interna de ~100 px en el celular) y las
+   pestañas quedan pegadas arriba al bajar. Los botones de la cuadrícula van en una fila que se desliza de lado. */
+.hoja { overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.hoja > * { flex-shrink: 0; }
+.hoja .contenido { overflow: visible; flex: none; }
+.hoja .pestanas { position: sticky; top: 0; z-index: 6; background: #0d141c; }
+.acciones-hoja { display: flex; gap: 6px; overflow-x: auto; flex-wrap: nowrap; padding: 2px 0 4px; scrollbar-width: none; }
+.acciones-hoja::-webkit-scrollbar { display: none; }
+.acciones-hoja button { flex: none; display: inline-flex; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 10px; font-size: 12px; white-space: nowrap; color: var(--suave); }
+.acciones-hoja button.on { color: var(--texto); border-color: var(--acento); }
+.acciones-hoja button span { font-size: 12px; font-weight: 600; }
+details.unidades-prio > summary { cursor: pointer; list-style: none; margin-bottom: 0; }
+details.unidades-prio > summary::-webkit-details-marker { display: none; }
+details.unidades-prio > summary::after { content: "▾"; margin-left: 6px; color: var(--suave); font-size: 12px; }
+details.unidades-prio[open] > summary::after { content: "▴"; }
+details.unidades-prio[open] > summary { margin-bottom: 6px; }
+/* barra de herramientas plegable */
+.flotantes .plegar-barra { height: 26px; color: var(--suave); }
+.flotantes.plegada { padding: 2px; }
+.flotantes.plegada .plegar-barra { width: 34px; height: 42px; color: var(--texto); }
+@media (max-width: 899px) {
+  .hoja.media { height: 52vh; }
+  .nav-celda .cod { font-size: 17px; }
+}
