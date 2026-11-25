@@ -15,11 +15,13 @@ const CAPAS_TXT = [
   ["Concesiones mineras", "código, nombre, titular, estado, hectáreas"],
 ];
 
-export default function ExportarSIG({ celda, zonas, prioridad, onCerrar }: {
+export default function ExportarSIG({ celda, zonas, prioridad, onCerrar, guardar, destino }: {
   celda: Celda;
   zonas: Afloramiento[];
   prioridad: { url: string; bbox: number[] } | null;
   onCerrar: () => void;
+  guardar?: (b: Blob, nombre: string) => Promise<void>;
+  destino?: string;
 }) {
   const [formato, setFormato] = useState<"kmz" | "shp">(() => {
     try { return localStorage.getItem("prospector-rmi:formato-sig") === "shp" ? "shp" : "kmz"; } catch { return "kmz"; }
@@ -36,7 +38,8 @@ export default function ExportarSIG({ celda, zonas, prioridad, onCerrar }: {
         zonas: zonas.map((a) => ({ clase: a.clase, unidad: a.unidad, litologia: a.litologia || a.descripcion, geometria: a.geometria })),
         prioridad: prioridad ? { png: prioridad.url, bbox: prioridad.bbox } : null,
       });
-      void guardarArchivo(blob, formato === "shp" ? `${celda.codigo}_capas_shp.zip` : `${celda.codigo}_capas.kmz`);
+      const nombre = formato === "shp" ? `${celda.codigo}_capas_shp.zip` : `${celda.codigo}_capas.kmz`;
+      await (guardar ? guardar(blob, nombre) : guardarArchivo(blob, nombre));
       setEstado("listo");
     } catch (e) {
       setEstado((e as Error).message);
@@ -66,6 +69,7 @@ export default function ExportarSIG({ celda, zonas, prioridad, onCerrar }: {
         </div>
         {estado && estado !== "trabajando" && estado !== "listo" && <p className="error-mp">{estado}</p>}
         {estado === "listo" && <small className="ok-pet">✓ Descargado</small>}
+        {destino && <small className="destino-guardado">Se guardará en {destino}</small>}
         <button className="primario" disabled={ocupado} onClick={bajar}>
           {ocupado ? <><Loader2 size={16} className="gira" /> Preparando las capas…</> : <><Download size={16} /> Descargar {formato === "shp" ? "shapefile (ZIP)" : "KMZ"}</>}
         </button>

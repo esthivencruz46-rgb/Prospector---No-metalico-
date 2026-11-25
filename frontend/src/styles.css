@@ -1240,3 +1240,5 @@ details.unidades-prio[open] > summary { margin-bottom: 6px; }
   .leaflet-control-attribution { font-size: 8px; max-width: 60%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 @media (pointer: coarse) and (max-width: 899px) { .leaflet-control-zoom { display: none; } }
+
+.destino-guardado { display: block; margin: 6px 0; color: var(--suave); font-size: 11.5px; }

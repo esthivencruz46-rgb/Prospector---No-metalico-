@@ -12,7 +12,7 @@ const leyendaClases = (p0: number, menos: string, mas: string) => CLASES_COLOR.m
 });
 import { api, type Afloramiento, type ResultadoBusqueda, type ResultadoSentinel, type Ruta } from "./api";
 import { gms, type Celda } from "./geo";
-import { guardarArchivo } from "./guardar";
+import { guardarArchivo, pantallaEncendida, recordarInforme, tomarInforme } from "./guardar";
 
 type Tipo = "natural" | "swir" | "ndvi" | "bsi" | "ferruginosas" | "arcillas" | "protegidas" | "concesiones" | "libres"
   | "geologia_completa" | "geologia_desc" | "topografia" | "geologia_libre" | "prioridad" | "ruta" | "antecedentes" | "unidades" | "analisis" | "geologia";
@@ -30,6 +30,9 @@ interface Props {
   ruta?: { ruta: Ruta; destino: { lat: number; lon: number; nombre: string } } | null;
   /** si no hay ruta trazada, la lámina de ruta la calcula sola (planta → zona con más ha libres o centro de la cuadrícula) */
   rutaAuto?: () => Promise<{ ruta: Ruta; destino: { lat: number; lon: number; nombre: string } }>;
+  /** dónde se guarda lo generado (carpeta de la cuadrícula o Descargas) y el texto que lo explica */
+  guardar?: (b: Blob, nombre: string) => Promise<void>;
+  destino?: string;
   /** modo «Informe PDF»: todas las láminas en orden + portada, antecedentes y análisis, numeradas, en un solo PDF */
   informe?: boolean;
   /** NDVI, ferruginosa y arcillas solo dentro de estas unidades (percentiles de cada una); null = toda la cuadrícula */
@@ -67,7 +70,7 @@ const NOMBRES: Record<Tipo, string> = {
   geologia: "Geología de interés (zonas A/B/C)",
 };
 
-export default function Laminas({ celda, res, s2, materia, prioridadLibre, geologiaLibre, ruta, rutaAuto, fabrica, opacidades, informe, mejorZona, unidadesPrio, ambitoUnidades, onCerrar }: Props) {
+export default function Laminas({ celda, res, s2, materia, prioridadLibre, geologiaLibre, ruta, rutaAuto, guardar, destino, fabrica, opacidades, informe, mejorZona, unidadesPrio, ambitoUnidades, onCerrar }: Props) {
   const porUnidad = !!ambitoUnidades?.length;
   const listaUds = (ambitoUnidades ?? []).map((u) => u.replace(/^Grupo [^-]+ - /, "")).join(", ");
   const [autor, setAutor] = useState(() => { try { return localStorage.getItem(CLAVE_AUTOR) ?? ""; } catch { return ""; } });
@@ -314,7 +317,7 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
     }
   }
 
-  const bajar = (blob: Blob, nombre: string) => { void guardarArchivo(blob, nombre); };   // en el celular: Documentos
+  const bajar = (blob: Blob, nombre: string) => { void (guardar ? guardar(blob, nombre) : guardarArchivo(blob, nombre)); };
   const aDataUrl = (b: Blob) => new Promise<string>((ok, mal) => {
     const r = new FileReader(); r.onload = () => ok(r.result as string); r.onerror = () => mal(r.error); r.readAsDataURL(b);
   });
@@ -335,18 +338,33 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
         for (const [k, t] of juego.entries()) {
           lista.push({ ...(await peticion(t)), lamina: String(k + 1).padStart(2, "0"), total: String(juego.length).padStart(2, "0") });
         }
-        const { id } = await api.informeIniciar({ titulo: `Informe de prospección · cuadrícula ${celda.codigo}`, nombre: `Informe_${celda.codigo}.pdf`, paginas: lista });
+        const nombrePdf = `Informe_${celda.codigo}.pdf`;
+        const { id } = await api.informeIniciar({ titulo: `Informe de prospección · cuadrícula ${celda.codigo}`, nombre: nombrePdf, paginas: lista });
+        // el servidor sigue aunque el celular se apague: se recuerda para bajarlo al volver (App lo revisa al abrir)
+        recordarInforme({ id, nombre: nombrePdf, codigo: celda.codigo, t: Date.now() });
+        await pantallaEncendida(true);
+        const limite = Date.now() + 30 * 60e3;
+        let fallos = 0;
         for (;;) {
-          await new Promise((ok) => setTimeout(ok, 2000));
-          const st = await api.informeEstado(id);
+          await new Promise((ok) => setTimeout(ok, 3000));
+          let st;
+          try { st = await api.informeEstado(id); fallos = 0; } catch (e) {
+            // sin conexión un momento (pantalla apagada, cambio de red): se sigue esperando
+            if (++fallos > 100 || Date.now() > limite) throw e;
+            continue;
+          }
           setAvance({ hechas: st.hechas, total: st.total, mb: st.mb, errores: st.errores });
           if (st.estado === "error") throw new Error(st.errores.join(" · ") || "no se pudo armar el informe");
           if (st.estado === "listo") break;
+          if (Date.now() > limite) throw new Error("el informe tardó demasiado; se bajará solo al volver a abrir la app si el servidor lo termina");
         }
-        bajar(await api.informePdf(id), `Informe_${celda.codigo}.pdf`);
+        if (tomarInforme(id)) bajar(await api.informePdf(id), nombrePdf);
+        recordarInforme(null);
         setEstado({ pdf: "listo" });
       } catch (err) {
         setEstado({ pdf: (err as Error).message });
+      } finally {
+        void pantallaEncendida(false);
       }
       return;
     }
@@ -392,7 +410,7 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
       <div className="modal laminas" onClick={(e) => e.stopPropagation()}>
         <div className="titulo-mp"><b><FileImage size={18} /> {informe ? "Informe PDF" : "Láminas"} · {celda.codigo}</b><button onClick={onCerrar} disabled={ocupado}>×</button></div>
         <small className="explica">{informe
-          ? "Un solo PDF A3: portada con índice, todas las láminas en orden y numeradas, antecedentes de los boletines y análisis de las capas con las cifras de esta cuadrícula. El servidor genera las páginas en paralelo: ≈ 2–3 min."
+          ? "Un solo PDF A3: portada con índice, todas las láminas en orden y numeradas, antecedentes de los boletines y análisis de las capas con las cifras de esta cuadrícula. Lo arma el servidor (≈ 2–6 min): la pantalla se mantiene encendida y, si el celular se apaga o cierras la app, el PDF se baja solo al volver a abrirla."
           : "Láminas A3 listas para informe: cuadrícula UTM, norte, escalas, ubicación por departamento, leyenda, datos y membrete."}</small>
         <label className="campo-mp">
           <span><b>Proyecto</b><small>aparece en el cajetín</small></span>
@@ -439,6 +457,7 @@ export default function Laminas({ celda, res, s2, materia, prioridadLibre, geolo
         {informe && !!avance?.errores?.length && <small className="error-mp">Páginas con problema: {avance.errores.join(" · ")}</small>}
         {estado.pdf === "listo" && <small className="ok-pet">✓ PDF descargado: {informe ? `Informe_${celda.codigo}.pdf` : `${celda.codigo}_laminas.pdf`}
           {informe && avance?.mb ? ` · ${String(avance.mb).replace(".", ",")} MB` : ""}</small>}
+        {destino && <small className="destino-guardado">Se guardará en {destino}</small>}
         <button className="primario" disabled={ocupado || ![...elegidas].some((t) => !disponible[t])} onClick={generar}>
           <Download size={16} /> {ocupado ? (estado.pdf === "generando" ? "Armando el PDF…" : "Generando… (≈ 15–25 s cada una)")
             : informe ? "Generar y descargar el informe PDF" : `Generar y descargar ${formato.toUpperCase()}`}

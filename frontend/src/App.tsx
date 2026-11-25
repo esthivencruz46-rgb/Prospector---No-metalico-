@@ -48,7 +48,7 @@ import {
   FABRICA_INICIAL, celda25, celdaComoPoligono, celdaEn, celdasEnVista, distanciaKm, formatoKm, gms, hoja50, parsearUbicacion, utm, cuadricula100En,
   tieneTierra, vecina, type Celda, type Rumbo, type Ubicacion,
 } from "./geo";
-import { guardarArchivo } from "./guardar";
+import { guardarArchivo, informePendiente, recordarInforme, tomarInforme } from "./guardar";
 
 type Fase = "inicio" | "area" | "buscando" | "resultado";
 type Pestana = "afloramientos" | "sentinel" | "biblio";
@@ -866,6 +866,54 @@ export default function App() {
   );
 
   const carpetasDe = (codigo: string) => carpetas.filter((k) => k.celdas.some((g) => g.codigo === codigo));
+  /** RESULTADOS EN LA CARPETA DE LA CUADRÍCULA (25/11/2026): informe PDF, láminas y KMZ/shapefile se guardan como
+   *  ADJUNTOS de la cuadrícula en cada carpeta ★ que la contiene (en el celular quedan en Documentos › Prospector RMI ›
+   *  <carpeta> › <cuadrícula> › adjuntos). Sin carpeta: descarga normal (en el celular, Documentos › … › Descargas). */
+  async function guardarResultado(blob: Blob, nombre: string, codigo: string) {
+    const ks = carpetasDe(codigo);
+    if (ks.length) {
+      const f = new File([blob], nombre, { type: blob.type || "application/octet-stream" });
+      for (const k of ks) await adjuntar(k, codigo, [f]);
+      if (plat === "app") {
+        window.alert(`Guardado en la carpeta «${ks.map((k) => k.nombre).join("», «")}» › ${codigo}.\n\nEn el celular: Documentos › Prospector RMI › ${ks[0].nombre} › ${codigo} › adjuntos`);
+        return;
+      }
+    }
+    await guardarArchivo(blob, nombre);   // PC: además se descarga; celular sin carpeta: Descargas
+  }
+  // INFORME PENDIENTE: si el celular se apagó o se cerró la app mientras el servidor armaba el PDF, se baja al volver
+  useEffect(() => {
+    let vivo = true, ocupado = false;
+    const revisar = async () => {
+      const x = informePendiente();
+      if (!x || ocupado || document.visibilityState !== "visible") return;
+      ocupado = true;
+      try {
+        const st = await api.informeEstado(x.id);
+        if (st.estado === "listo") {
+          if (!tomarInforme(x.id)) return;   // ya lo bajó la ventana del informe
+          const pdf = await api.informePdf(x.id);
+          recordarInforme(null);
+          if (vivo) { await guardarResultado(pdf, x.nombre, x.codigo); setAviso(`El informe de ${x.codigo} quedó listo y se guardó.`); }
+        } else if (st.estado === "error") {
+          recordarInforme(null);
+          if (vivo) setError(`El informe de ${x.codigo} no se pudo armar: ${st.errores.join(" · ")}`);
+        }
+      } catch (e) {
+        // 404 = el servidor se reinició y ya no lo tiene; otros errores (sin red): se reintenta luego
+        if (String((e as Error).message).includes("404")) recordarInforme(null);
+      } finally { ocupado = false; }
+    };
+    void revisar();
+    const t = setInterval(revisar, 8000);
+    document.addEventListener("visibilitychange", revisar);
+    return () => { vivo = false; clearInterval(t); document.removeEventListener("visibilitychange", revisar); };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const destinoResultados = (codigo: string) => {
+    const ks = carpetasDe(codigo);
+    if (ks.length) return `la carpeta «${ks.map((k) => k.nombre).join("», «")}» › ${codigo}${plat === "app" ? " (Documentos › Prospector RMI)" : " y en Descargas"}`;
+    return `${plat === "app" ? "Documentos › Prospector RMI › Descargas" : "Descargas"}. Guarda la cuadrícula con ★ en una carpeta para tenerlo junto a ella.`;
+  };
   const enCarpeta = useMemo(() => new Set(carpetas.flatMap((k) => k.celdas.map((g) => g.codigo))), [carpetas]);
 
   const km = (lat: number, lon: number) => distanciaKm(fabrica[0], fabrica[1], lat, lon);
@@ -2375,6 +2423,7 @@ export default function App() {
             }
             return null;
           })()}
+          guardar={(b, n) => guardarResultado(b, n, celdaArea.codigo)} destino={destinoResultados(celdaArea.codigo)}
           rutaAuto={async () => {
             // 3) sin ruta trazada: desde la planta hasta la zona elegida con más ha libres (o el centro de la cuadrícula)
             const z = prioLibre ? [...zonasElegidas].sort((x, y) => (prioLibre.porZona[y.id]?.haLibre ?? 0) - (prioLibre.porZona[x.id]?.haLibre ?? 0))[0] : undefined;
@@ -2393,6 +2442,7 @@ export default function App() {
 
       {verSIG && celdaArea && res && (
         <ExportarSIG celda={celdaArea} zonas={res.afloramientos} prioridad={prioLibre ? { url: prioLibre.url, bbox: prioLibre.bbox } : null}
+          guardar={(b, n) => guardarResultado(b, n, celdaArea.codigo)} destino={destinoResultados(celdaArea.codigo)}
           onCerrar={() => setVerSIG(false)} />
       )}
 
